@@ -6,7 +6,334 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
+  <style>
+    * {
+      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    }
+    #top_floting_img {
+      display: flex;
+      position: relative;
+      justify-content: center;
+      /* min-height: 100vh; */
+      width: 80%;
+      overflow: hidden;
+      margin: auto;
+    }
+    #top_floting_img > .box {
+      display: flex;
+      animation: scroll 30s linear infinite;
+      width: calc(500px * 9);
+    }
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(calc(-500px * 9));
+      }
+    }
+    #fruit_image {
+      width: 80%;
+      margin: auto;
+    }
+    #fruit_image > img {
+      margin-top: 30px;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+    #product {
+      display: flex;
+      width: 80%;
+      margin: auto;
+    }
+    #product > #category {
+      display: block;
+      width: 20%;
+      border-right: 1px solid;
+    }
+    #topsection {
+      width: 80%;
+      margin: auto;
+      display: flex;
+    }
+    #topsection > #topsectionl {
+      width: 20%;
+      /* border: 1px solid; */
+    }
+    #topsection > #topsectionr {
+      width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    #topsectionr > h3 {
+      padding-right: 300px;
+    }
+    li {
+      list-style: none;
+    }
+    #category > h5,
+    h4 {
+      border-bottom: 1px solid;
+      text-decoration: underline;
+      text-decoration-color: lime;
+      color: rgb(86, 86, 86);
+    }
+    #category {
+      color: gray;
+      font-size: small;
+      line-height: 20px;
+    }
+    #category > h5 {
+      color: lime;
+    }
+    #product > #items {
+      width: 80%;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    #items > div:hover {
+      box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+        rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+        rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      /* color: brown; */
+    }
+  </style>
   <body>
-    <h1>iam mohan i created my branch</h1>
+    <div id="navbar"></div>
+    <div id="top_floting_img">
+      <div class="box">
+        <span
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP6725-1200X300-19thOCT22.jpg"
+        /></span>
+        <span
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP6710-1200X300-14thOCT22.jpg"
+        /></span>
+        <span
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16473-1200x300-25thdec.jpg"
+        /></span>
+        <span
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP8584-1200X300-23rdNOV22.jpg"
+        /></span>
+        <span
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP6728-1200X300-19thOCT22.jpg"
+        /></span>
+      </div>
+    </div>
+    <div id="fruit_image">
+      <img
+        src="https://www.bigbasket.com/media/uploads/flatpages/test-1/Fruits%20&%20vegetables.jpg"
+      />
+    </div>
+    <div id="topsection">
+      <div id="topsectionl"></div>
+      <div id="topsectionr">
+        <h3>Fruits & Vegetables (532)</h3>
+        <select id="filter" onchange="filter1()">
+          <option value="">Popularity</option>
+          <option value="Laptop">Price - Low to High</option>
+          <option value="Mobile">Price - High to Low</option>
+          <option value="Speakers">Alphabetical</option>
+        </select>
+      </div>
+    </div>
+    <div id="product">
+      <div id="category">
+        <h3>Category</h3>
+        <h5>Fruits & Vegetables</h5>
+        <ul>
+          <li>Cuts & Sprouts (105)</li>
+          <li>Exotic Fruits & Veggies (95)</li>
+          <li>Flower Bouquets, Bunches (25)</li>
+          <li>Fresh Fruits (139)</li>
+          <li>Fresh Vegetables (290)</li>
+          <li>Herbs & Seasonings (54)</li>
+          <li>Organic Fruits & Vegetables (66)</li>
+        </ul>
+        <h4>Brand</h4>
+
+        <li><input type="checkbox" />bb Combo</li>
+        <li><input type="checkbox" />Fresho</li>
+        <li><input type="checkbox" />Gopalan Organic</li>
+        <li><input type="checkbox" />Hoovu Fresh</li>
+        <li><input type="checkbox" />Tadaa</li>
+        <li><input type="checkbox" />USA</li>
+
+        <h4>Seasonal</h4>
+
+        <li><input type="checkbox" />Summer Fruits</li>
+        <li><input type="checkbox" />Summer Veggies</li>
+        <li><input type="checkbox" />Winter Fruits</li>
+        <li><input type="checkbox" />Winter Veggies</li>
+
+        <h4>Country</h4>
+
+        <li><input type="checkbox" />Australia</li>
+        <li><input type="checkbox" />Greece</li>
+        <li><input type="checkbox" />India</li>
+        <li><input type="checkbox" />Italy</li>
+        <li><input type="checkbox" />South Africa</li>
+        <li><input type="checkbox" />Spain</li>
+        <li><input type="checkbox" />Thailand</li>
+        <li><input type="checkbox" />Iran</li>
+        <li><input type="checkbox" />USA</li>
+        <li><input type="checkbox" />Egypt</li>
+        <li><input type="checkbox" />Peru</li>
+        <li><input type="checkbox" />New Zealand</li>
+        <li><input type="checkbox" />Turkey</li>
+        <li><input type="checkbox" />Chile</li>
+
+        <h4>Price</h4>
+
+        <li><input type="checkbox" />Less than Rs 20 (94)</li>
+        <li><input type="checkbox" />Rs 21 to Rs 50 (200)</li>
+        <li><input type="checkbox" />Rs 51 to Rs 100 (116)</li>
+        <li><input type="checkbox" />Rs 101 to Rs 200 (83)</li>
+        <li><input type="checkbox" />Rs 201 to Rs 500 (27)</li>
+        <li><input type="checkbox" />More than Rs 501 (8)</li>
+
+        <h4>Discount</h4>
+
+        <li><input type="checkbox" />10% - 15% (2)</li>
+        <li><input type="checkbox" />15% - 25% (408)</li>
+        <li><input type="checkbox" />More than 25% (111)</li>
+      </div>
+      <div id="items"></div>
+    </div>
   </body>
 </html>
+<script>
+  var data = [
+    {
+      image:
+        "https://www.bigbasket.com/media/uploads/p/s/10000150_19-fresho-onion.jpg",
+      type: "fresho",
+      name: "Onion (Loose)",
+      wt: "5 kg - Rs 199.00",
+      mrp: 279.51,
+      price: 199,
+    },
+    {
+      image:
+        "https://www.bigbasket.com/media/uploads/p/s/40162469_6-fresho-potato-new-crop.jpg",
+      type: "fresho",
+      name: "Potato",
+      wt: "2 kg",
+      mrp: 107.09,
+      price: 82,
+    },
+    {
+      image:
+        "https://www.bigbasket.com/media/uploads/p/s/10000070_15-fresho-carrot-orange.jpg",
+      type: "fresho",
+      name: "Carrot - Orange (Loose)",
+      wt: "1 kg - Rs 65.50",
+      mrp: 113.5,
+      price: 67.5,
+    },
+    {
+      image:
+        "https://www.bigbasket.com/media/uploads/p/s/10000200_17-fresho-tomato-hybrid.jpg",
+      type: "fresho",
+      name: "Tomato - Hybrid (Loose)",
+      wt: "1 kg - Rs 15.50",
+      mrp: 25,
+      price: 15.5,
+    },
+    {
+      image:
+        "https://www.bigbasket.com/media/uploads/p/s/40089742_2-fresho-beans-haricot.jpg",
+      type: "fresho",
+      name: "Beans - Haricot (Loose)",
+      wt: "500 g - Rs 16.50",
+      mrp: 23.3,
+      price: 16.5,
+    },
+    {
+      image:
+        "https://www.bigbasket.com/media/uploads/p/s/10000144_13-fresho-ladies-finger.jpg",
+      type: "fresho",
+      name: "Ladies' Fingers (Loose)",
+      wt: "500 g - Rs 27.00",
+      mrp: 35.53,
+      price: 27,
+    },
+    {
+      image:
+        "https://www.bigbasket.com/media/uploads/p/s/10000074_19-fresho-cauliflower.jpg",
+      type: "fresho",
+      name: "Cauliflower",
+      wt: "1 pc (approx.400 t0 600 g)",
+      mrp: 32.09,
+      price: 25,
+    },
+    {
+      image:
+        "https://www.bigbasket.com/media/uploads/p/s/10000098_9-fresho-coriander-leaves.jpg",
+      type: "fresho",
+      name: "Coriander Leaves",
+      wt: "250 g - Rs 27.00",
+      mrp: 40.3,
+      price: 27,
+    },
+  ];
+  display(data);
+
+  function display(arr) {
+    document.getElementById("items").textContent = "";
+
+    arr.map(function (elm) {
+      var div = document.createElement("div");
+      div.setAttribute("id", "item");
+
+      var div1 = document.createElement("div");
+      div1.setAttribute("id", "itemtop");
+      var image = document.createElement("img");
+      image.setAttribute("src", elm.image);
+      var type = document.createElement("p");
+      type.textContent = elm.type;
+      var name = document.createElement("h5");
+      name.textContent = elm.name;
+      var select = document.createElement("select");
+      var option = document.createElement("option");
+      option.setAttribute("value", "gtg");
+      var nod = document.createTextNode(elm.wt);
+      option.appendChild(nod);
+      select.appendChild(option);
+
+      div1.append(image, type, name, select);
+
+      var div2 = document.createElement("div");
+      div2.setAttribute("id", "itembottem");
+      var mrp = document.createElement("p");
+      mrp.textContent = elm.mrp;
+      //   mrp.textContent = textcross.strike();
+      var price = document.createElement("p");
+      price.textContent = elm.price;
+      var deli = document.createElement("p");
+      deli.textContent = "Standard Delivery: 30 Nov, 9:00AM - 1:30PM";
+
+      var div3 = document.createElement("div");
+      div3.setAttribute("id", "itembottem2");
+      var qty = document.createElement("p");
+      qty.textContent = "Qty";
+      var count = document.createElement("input");
+      count.setAttribute("type", "number");
+      count.setAttribute("id", "itemcount");
+      var bt = document.createElement("button");
+
+      div3.append(qty, count, bt);
+      div2.append(mrp, price, deli, div3);
+      div.append(div1, div2);
+      console.log(div);
+
+      document.getElementById("items").append(div);
+    });
+  }
+</script>

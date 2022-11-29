@@ -15,7 +15,8 @@
     padding: 10px;
     width: 90%;
     margin: auto;
-    
+    display: flex;
+    justify-content: space-around;
   }
   #address_form label {
     color: #979797;
@@ -345,3 +346,29 @@
   .p{
     color: #c6c6c6;
   }
+  #right{
+    background-color: #f7f7f7;
+    width: 300px;
+    height: 160px;
+    padding-top: 10px;
+  }
+  #sd{
+    background-color: white;
+    border: 1px solid #efefef;
+    width: 250px;
+    margin-left: 19px;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding: 7px 7px 7px 7px;
+    
+  }
+  #sb{
+    background-color: white;
+    border: 1px solid #efefef;
+    width: 250px;
+    margin-left: 19px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 7px 7px 7px 7px;
+  }
+  

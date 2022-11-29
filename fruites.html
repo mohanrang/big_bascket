@@ -57,9 +57,6 @@
         align-items: center;
         /* border-bottom: 1px solid; */
       }
-      .top3right > h3 {
-        /* padding-right: 340px; */
-      }
       .top3right > select {
         height: 40px;
         width: 250px;
@@ -216,9 +213,85 @@
         margin-top: 200px;
         padding: 5px;
       }
+      #adress {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+      }
+      #adress > img {
+        width: 30px;
+        height: 30px;
+      }
+      #navigationbar {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        height: 200px;
+      }
+
+      #navigationbar > #navigationbarr > img {
+        width: 60px;
+      }
+      #navigationbar > #navigationbarm > input {
+        width: 600px;
+        height: 30px;
+      }
+      #navigationbar > #navigationbarl {
+        display: block;
+      }
+      /* #navigationbar > #navigationbarm{
+        width: 60px;
+      } */
+      #navigationbar > #navigationbarm > img {
+        width: 37px;
+      }
+      #navigationbar > #navigationbarl > img {
+        width: 300px;
+      }
+      #navigationbar > #navigationbarm {
+        display: flex;
+        align-items: center;
+      }
     </style>
   </head>
   <body>
+    <div id="adress">
+      <p>Mohan</p>
+      <img
+        src="https://thumbs.dreamstime.com/z/avatar-icon-vector-male-user-person-profile-symbol-flat-color-glyph-pictogram-illustration-117610386.jpg"
+      />
+      <p>56004, Bangalore</p>
+      <img
+        src="https://i.pinimg.com/736x/b7/02/af/b702afc7b811840ebc49037cdc98bc45.jpg"
+      />
+      <p>1860 123 1000</p>
+      <img
+        src="https://www.kindpng.com/picc/m/501-5013043_telephone-phone-call-icon-symbol-vector-tel-icon.png"
+      />
+    </div>
+    <div id="navigationbar">
+      <div id="navigationbarl">
+        <img
+          src="https://d1.awsstatic.com/apac/customer-references-logos-(%401x---%402x)/BigBasket_logo%402x.ef31ecfba085a8cc00a32b3cfc077fc04a01aeb1.png"
+        />
+        <!-- <button>SHOP BY CATEGORY</button> -->
+      </div>
+      <div id="navigationbarm">
+        <input type="text" placeholder="Search for Products" />
+        <img
+          src="https://www.iconsdb.com/icons/preview/green/google-web-search-xxl.png"
+        />
+      </div>
+      <div id="navigationbarr">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocXqcZxL79ojfeDRaP_szGq5gAZEpuGPRQelGBR7zagKeZATRUeKcQfm7bt8xEKubRUQ&usqp=CAU"
+        />
+      </div>
+    </div>
     <div id="topimage1">
       <div class="floting">
         <span class="slideimg"

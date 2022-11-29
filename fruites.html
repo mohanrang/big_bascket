@@ -60,6 +60,11 @@
       .top3right > select {
         height: 40px;
         width: 250px;
+        border-radius: 5px;
+      }
+      #top3right > select:hover {
+        background-color: rgb(188, 188, 188);
+        color: white;
       }
       #products {
         width: 80%;
@@ -256,12 +261,27 @@
         display: flex;
         align-items: center;
       }
+      #categorypages {
+        margin-left: 200px;
+      }
+      #categorypages > select {
+        width: 300px;
+        text-align: center;
+        height: 30px;
+        border-radius: 5px;
+        font-size: large;
+      }
+      #categorypages > select:hover {
+        background-color: rgb(188, 188, 188);
+        color: white;
+      }
     </style>
   </head>
   <body>
     <div id="adress">
       <p>Mohan</p>
       <img
+        onclick=""
         src="https://thumbs.dreamstime.com/z/avatar-icon-vector-male-user-person-profile-symbol-flat-color-glyph-pictogram-illustration-117610386.jpg"
       />
       <p>56004, Bangalore</p>
@@ -278,7 +298,6 @@
         <img
           src="https://d1.awsstatic.com/apac/customer-references-logos-(%401x---%402x)/BigBasket_logo%402x.ef31ecfba085a8cc00a32b3cfc077fc04a01aeb1.png"
         />
-        <!-- <button>SHOP BY CATEGORY</button> -->
       </div>
       <div id="navigationbarm">
         <input type="text" placeholder="Search for Products" />
@@ -288,9 +307,26 @@
       </div>
       <div id="navigationbarr">
         <img
+          onclick=""
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocXqcZxL79ojfeDRaP_szGq5gAZEpuGPRQelGBR7zagKeZATRUeKcQfm7bt8xEKubRUQ&usqp=CAU"
         />
       </div>
+    </div>
+    <div id="categorypages">
+      <select>
+        <option onclick="">SHOP BY CATEGORY</option>
+        <option onclick="">Fruits & Vegetables</option>
+        <option onclick="">Foodgrains, Oil & Masala</option>
+        <option onclick="">Bakery,Cakes & Dairy</option>
+        <option onclick="">Beverages</option>
+        <option onclick="">Snacks & Branded Foods</option>
+        <option onclick="">Eggs, Meat & Fish</option>
+        <option onclick="">Cleaning & Household</option>
+        <option onclick="">Kitchen, Garden & pets</option>
+        <option onclick="">Gourmet & World Food</option>
+        <option onclick="">Baby Care</option>
+      </select>
+      <!-- <button onclick="">SHOP BY CATEGORY</button> -->
     </div>
     <div id="topimage1">
       <div class="floting">

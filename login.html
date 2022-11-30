@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign up</title>
+    <style>
+        #rk {
+            width: 300px;
+            height: 400px;
+            background-color: white;
+            border: 1px solid;
+            padding: 2%;
+            margin: auto;
+            margin-top: 5%;
+            box-shadow: rgb(96 96 96/ 16%) 4px 4px 4px 4px;
+
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* background-color: rgba(0, 0, 0, 0.5); */
+            z-index: 2;
+            cursor: pointer;
+
+        }
+
+        #rk h2 {
+            color: #84c225;
+            font-size: 16px;
+            text-align: center;
+            line-height: 19px;
+            font-weight: 600;
+        }
+
+        #rk input {
+            background-color: transparent;
+            border: none;
+            margin-top: 20%;
+            margin-bottom: 5%;
+            color: gray;
+            width: 90%;
+            height: 10%;
+            border-bottom: 1px dashed;
+        }
+
+        #vk {
+            margin-top: 20%;
+            margin-bottom: 5%;
+            color: gray;
+            width: 90%;
+            height: 10%;
+            margin-left: 5%;
+            
+            background-color: white;
+            border: 1px solid black;
+        }
+
+        #kk {
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 90%;
+            height: 10%;
+           /* border-bottom: 1px solid gray;*/
+            border-radius: 5px;
+            font-weight: bolder;
+             border: none; 
+            background-color: #84c225;
+            color: white;
+        }
+
+        #rk p {
+            /* font-size: small; */
+            text-align: center;
+        }
+        #para{
+           font-size: small;
+        }
+    </style>
+</head>
+
+<body> 
+    <div id="rk">
+        <form>
+        <h2>LOGIN/SIGN UP</h2>
+        <p id="mbl"></p>
+        <input id="mb" type="text" placeholder="Enter Mobile Number (10-digit)">
+        <!-- <input id="vk" type="button" value="Enter mobile number"> -->
+        <button id="vk" onclick="switcher()">Login using Email Address</button>
+        <br>
+        <button id="kk" onclick="login()">Continue</button>
+        <p id="para">
+            By continuing, I accept TCP-bigbaskets Terms and Conditions and Privacy Policy.
+        </p>
+    </form>
+    </div>
+</body>
+</html>
+<script>
+    function switcher(){
+        event.preventDefault()
+        var v = localStorage.getItem("switch") || 0;
+        if(v==0){
+            localStorage.setItem("switch",1);
+            document.getElementById("vk").textContent = "Login using Mobile Number"
+            document.querySelector("input").placeholder="Enter Email Address"
+            document.querySelector("input").textContent=""
+            document.querySelector("input").maxLength="1000"
+        }
+        if(v==1){
+            localStorage.setItem("switch",0);
+            document.getElementById("vk").textContent = "Login using Email Address"
+            document.querySelector("input").placeholder="Enter Mobile Number (10-digit)"
+            document.querySelector("input").textContent=""
+            document.querySelector("input").maxLength="10"
+        }
+        
+    }
+   
+    function login(){
+
+        var abc=document.getElementById("mb").value;
+        localStorage.setItem("mobile",abc);
+    }
+    function xk(){
+
+    }
+</script>

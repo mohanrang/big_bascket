@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foodgrains, Oil & Masala</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: smaller;
+      }
+      #topimage1 {
+        width: 80%;
+        position: relative;
+        /* display: grid; */
+        display: flex;
+        margin: auto;
+        place-items: center;
+        overflow: hidden;
+        height: 300px;
+      }
+      #topimage1 > img {
+        height: 100%;
+      }
+      .floting {
+        display: flex;
+        width: calc(900px * 6);
+        animation: scroll 40s linear infinite;
+      }
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(calc(-900px * 6));
+        }
+      }
+      #top2image {
+        width: 80%;
+        margin: auto;
+      }
+      #top2image > img {
+        width: 100%;
+        margin: 30px 0px 30px 0px;
+      }
+      #top3 {
+        width: 80%;
+        margin: auto;
+        display: flex;
+      }
+      .top3left {
+        /* height: 100px; */
+        width: 20%;
+      }
+      .top3right {
+        /* height: 100px; */
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        /* border: 1px solid; */
+        align-items: center;
+        /* border-bottom: 1px solid; */
+      }
+      .top3right > select {
+        height: 40px;
+        width: 250px;
+        border-radius: 5px;
+      }
+      #top3right > select:hover {
+        background-color: rgb(188, 188, 188);
+        color: white;
+      }
+      #products {
+        width: 80%;
+        margin: auto;
+      }
+      #products > .category {
+        border-right: 1px solid;
+        width: 20%;
+        line-height: 25px;
+        color: gray;
+      }
+      .categorycolor > li:hover {
+        color: lime;
+      }
+      li {
+        list-style: none;
+      }
+      .category {
+        border-top: 1px solid;
+      }
+      .category > input {
+        width: 90%;
+      }
+      .category > h3 {
+        border-bottom: 1px solid;
+        text-decoration-line: underline;
+        text-decoration-color: limegreen;
+        color: rgb(59, 58, 58);
+      }
+      #products {
+        display: flex;
+      }
+      #items {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1em;
+        margin-left: 20px;
+        /* border: 1px solid; */
+      }
+      #items > div:hover {
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+          rgba(0, 0, 0, 0.3) 0px 7px 13px -3px,
+          rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+      }
+      #items > div {
+        padding: 7px;
+        height: 415px;
+        /* border: 1px solid; */
+      }
+      #veglogo {
+        width: 20px;
+      }
+      #div3 {
+        background-color: rgb(233, 233, 233);
+      }
+      #div4 {
+        display: flex;
+        height: 30px;
+        align-items: center;
+        justify-content: space-around;
+        color: darkgray;
+      }
+      #selectcart {
+        width: 100%;
+        text-align: center;
+      }
+      #countcart {
+        width: 50px;
+      }
+      #div4 > button {
+        align-items: center;
+        appearance: none;
+        background-color: #f8db00;
+        border-radius: 4px;
+        border-width: 0;
+        box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px;
+        box-sizing: border-box;
+        color: #36395a;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: "JetBrains Mono", monospace;
+        /* height: 48px; */
+        justify-content: center;
+        line-height: 1;
+        list-style: none;
+        overflow: hidden;
+        padding-left: 16px;
+        padding-right: 16px;
+        position: relative;
+        text-align: left;
+        text-decoration: none;
+        transition: box-shadow 0.15s, transform 0.15s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        white-space: nowrap;
+        will-change: box-shadow, transform;
+        font-size: 18px;
+      }
+
+      #div4 > button:focus {
+        box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+      }
+
+      #div4 > button:hover {
+        box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+          rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
+        transform: translateY(-2px);
+      }
+
+      #div4 > button:active {
+        box-shadow: #d6d6e7 0 3px 7px inset;
+        transform: translateY(2px);
+      }
+      #div1 {
+        height: 150px;
+      }
+      #single {
+        display: flex;
+        /* align-items: center; */
+        margin-right: -800px;
+        height: 300px;
+        line-height: 20px;
+      }
+      #single > #div1 {
+        width: 400px;
+        margin-right: 50px;
+      }
+      #single > #div1 > img {
+        width: 100%;
+      }
+      #single > #div2 {
+        margin-top: 200px;
+        margin-right: 20px;
+        background-color: rgb(187, 186, 186);
+        padding: 5px;
+      }
+      #single > #div3 {
+        margin-top: 200px;
+        padding: 5px;
+      }
+      #adress {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 80%;
+        margin: auto;
+      }
+      #adress > img {
+        width: 30px;
+        height: 30px;
+      }
+      #navigationbar {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: auto;
+        height: 150px;
+      }
+
+      #navigationbar > #navigationbarr > img {
+        width: 40px;
+      }
+      #navigationbar > #navigationbarm > input {
+        width: 450px;
+        height: 23px;
+      }
+      #navigationbar > #navigationbarl {
+        display: block;
+      }
+      /* #navigationbar > #navigationbarm{
+        width: 60px;
+      } */
+      #navigationbar > #navigationbarm > img {
+        width: 28px;
+      }
+      #navigationbar > #navigationbarl > img {
+        width: 180px;
+      }
+      #navigationbar > #navigationbarm {
+        display: flex;
+        align-items: center;
+      }
+      #categorypages {
+        margin-left: 150px;
+        margin-top: -10px;
+      }
+      #categorypages > select {
+        width: 260px;
+        text-align: center;
+        height: 20px;
+        border-radius: 5px;
+        /* font-size: large; */
+      }
+      #categorypages > select:hover {
+        background-color: rgb(188, 188, 188);
+        color: white;
+      }
+
+      /* ul {
+        display: none;
+      }
+      ul li:hover {
+        display: block;
+      } */
+    </style>
+  </head>
+  <body>
+    <div id="adress">
+      <p>Mohan</p>
+      <img
+        onclick=""
+        src="https://thumbs.dreamstime.com/z/avatar-icon-vector-male-user-person-profile-symbol-flat-color-glyph-pictogram-illustration-117610386.jpg"
+      />
+      <p>56004, Bangalore</p>
+      <img
+        src="https://i.pinimg.com/736x/b7/02/af/b702afc7b811840ebc49037cdc98bc45.jpg"
+      />
+      <p>1860 123 1000</p>
+      <img
+        src="https://www.kindpng.com/picc/m/501-5013043_telephone-phone-call-icon-symbol-vector-tel-icon.png"
+      />
+    </div>
+    <div id="navigationbar">
+      <div id="navigationbarl">
+        <img
+          src="https://d1.awsstatic.com/apac/customer-references-logos-(%401x---%402x)/BigBasket_logo%402x.ef31ecfba085a8cc00a32b3cfc077fc04a01aeb1.png"
+        />
+      </div>
+      <div id="navigationbarm">
+        <input type="text" placeholder="Search for Products" />
+        <img
+          src="https://www.iconsdb.com/icons/preview/green/google-web-search-xxl.png"
+        />
+      </div>
+      <div id="navigationbarr">
+        <img
+          onclick=""
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocXqcZxL79ojfeDRaP_szGq5gAZEpuGPRQelGBR7zagKeZATRUeKcQfm7bt8xEKubRUQ&usqp=CAU"
+        />
+      </div>
+    </div>
+    <div id="categorypages">
+      <select id="dropdown" onclick="filt()">
+        <option >Shop By Category</option>
+        <option value="fruits.html">Foodgrains, Oil & Masala</option>
+        <option value="bakery">Bakery,Cakes & Dairy</option>
+        <option value="Beverages">Beverages</option>
+        <option value="Snacks">Snacks & Branded Foods</option>
+        <option value="Eggs">Eggs, Meat & Fish</option>
+        <option value="Cleaning">Cleaning & Household</option>
+        <option value="Kitchen">Kitchen, Garden & pets</option>
+        <option value="Gourmet">Gourmet & World Food</option>
+        <option value="Baby">Baby Care</li>
+      </select>
+    </div>
+    <div id="topimage1">
+        <div class="floting">
+          <span class="slideimg"
+            ><img
+              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16717-1200x300-25thdec.jpg"
+          /></span>
+          <span class="slideimg"
+            ><img
+              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16685-1200x300-25thdec.jpg"
+          /></span>
+          <span class="slideimg"
+            ><img
+              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16602-1200x300-25thdec.jpg"
+          /></span>
+          <span class="slideimg"
+            ><img
+              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16595-1200x300-25thdec.jpg"
+          /></span>
+          <span class="slideimg"
+            ><img
+              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17014.jpg"
+          /></span>
+          <span class="slideimg"
+            ><img
+              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17434_1200x300_25thnov.jpg"
+          /></span>
+          <span class="slideimg"
+            ><img
+              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16773-1200x300-25thdec.jpg"
+          /></span>
+        </div>
+      </div>
+      <div id="top2image">
+      <img
+        src="https://www.bigbasket.com/media/uploads/flatpages/test-1/Fruits%20&%20vegetables.jpg"
+      />
+    </div>
+    <div id="top3">
+      <div class="top3left">
+        <h3>Category</h3>
+      </div>
+      <div class="top3right">
+        <h3>Foodgrains, Oil & Masala (20)</h3>
+        <select id="selectfilter" onclick="selectfilter()">
+          <option value="Popularity">Popularity</option>
+          <option value="low2high">Price Low To High</option>
+          <option value="hightolow">Price High To Low</option>
+        </select>
+      </div>
+    </div>
+    <div id="products">
+      <div class="category">
+        <h3 style="color: rgb(2, 195, 2)">Foodgrains, Oil & Masala (20)</h3>
+        <div class="categorycolor">
+          <li>Cuts & Sprouts (105)</li>
+          <li>Exotic Fruits & Veggies (97)</li>
+          <li>Flower Bouquets, Bunches (25)</li>
+          <li>Fresh Fruits (145)</li>
+          <li>Fresh Vegetables (294)</li>
+          <li>Herbs & Seasonings (54)</li>
+          <li>Organic Fruits & Vegetables (67)</li>
+        </div>
+        <h3>Price</h3>
+        <li value="20" id="20">
+          <input type="checkbox" onclick="fun()" />Less than Rs 20 (93)
+        </li>
+        <li value="50" id="50">
+          <input type="checkbox" onclick="fun1()" />Rs 21 to Rs 50 (202)
+        </li>
+        <li value="100" id="100">
+          <input type="checkbox" onclick="fun2()" />Rs 51 to Rs 100 (123)
+        </li>
+        <li value="200" id="200">
+          <input type="checkbox" onclick="fun3()" />Rs 101 to Rs 200 (82)
+        </li>
+        <li value="500" id="500">
+          <input type="checkbox" onclick="fun4()" />Rs 201 to Rs 500 (31)
+        </li>
+        <li value="600" id="600">
+          <input type="checkbox" onclick="fun5()" />More than Rs 501 (2)
+        </li>
+        <h3>Brand</h3>
+        <input type="text" placeholder="Search by Brand" />
+        <li><input type="checkbox" />bb Combo</li>
+        <li><input type="checkbox" />Fresho</li>
+        <li><input type="checkbox" />Gopalan Organic</li>
+        <li><input type="checkbox" />Hoovu Fresh</li>
+        <li><input type="checkbox" />Tadaa</li>
+        <li><input type="checkbox" />USA</li>
+        <h3>Seasonal</h3>
+        <li><input type="checkbox" />Summer Fruits</li>
+        <li><input type="checkbox" />Summer Veggies</li>
+        <li><input type="checkbox" />Winter Fruits</li>
+        <li><input type="checkbox" />Winter Veggies</li>
+        <h3>Country Of Origin</h3>
+        <li><input type="checkbox" />Australia</li>
+        <li><input type="checkbox" />Greece</li>
+        <li><input type="checkbox" />India</li>
+        <li><input type="checkbox" />Italy</li>
+        <li><input type="checkbox" />South Africa</li>
+        <li><input type="checkbox" />Spain</li>
+        <li><input type="checkbox" />Thailand</li>
+        <li><input type="checkbox" />Iran</li>
+        <li><input type="checkbox" />USA</li>
+        <li><input type="checkbox" />Egypt</li>
+        <li><input type="checkbox" />Peru</li>
+        <li><input type="checkbox" />New Zealand</li>
+        <li><input type="checkbox" />Turkey</li>
+        <li><input type="checkbox" />Chile</li>
+      </div>
+      <div id="items"></div>
+    </div>
+  </body>
+</html>
+<script>
+    var data =[
+  {
+    img : "https://www.bigbasket.com/media/uploads/p/s/126906_8-aashirvaad-atta-whole-wheat.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Aashirvaad",
+    name : "Atta/Godihittu - Whole Wheat",
+    kg : "10 kg Pouch",
+    mrp : "576",
+    rs : "476",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/s/10000404_18-bb-royal-rice-raw-sona-masoori-12-17-months-old.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "BB Royal",
+    name : "Rice/Akki - Raw, Sona",
+    kg : "10 kg Bag",
+    mrp : "700",
+    rs : "525",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/s/30005417_8-bb-popular-sugar.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "BB Popular",
+    name : "Sugar/Sakkare",
+    kg : "5 kg",
+    mrp : "275",
+    rs : "213",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/s/10000425_15-bb-royal-toor-dalarhar-dal-desi.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "BB Royal",
+    name : "Toor Dal/Togari Bele",
+    kg : "1 kg Pouch",
+    mrp : "170",
+    rs : "149",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/s/274120_4-sunpure-refined-sunflower-oil.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Sunpure",
+    name : "Refined - Sunflower Oil",
+    kg : "1 L Pouch",
+    mrp : "185",
+    rs : "160",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/s/241600_5-tata-salt-iodized.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Tata Salt",
+    name : "Iodized",
+    kg : "1 kg Pouch",
+    mrp : "28",
+    rs : "25.50",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/s/40253564_1-madhur-sugar-pure-hygienic-fine-grain-natural-sulphur-free.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Madhur",
+    name : "Sugar",
+    kg : "5 kg",
+    mrp : "295",
+    rs : "241",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/s/40072510_14-bb-royal-organic-almondbadam.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "BB Royal",
+    name : "Organic - Almond/Badam",
+    kg : "100 g",
+    mrp : "140",
+    rs : "104",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/274125_3-sunpure-refined-sunflower-oil.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Sunpure",
+    name : "Refined Sunflower - Oil",
+    kg : "5 L Can",
+    mrp : "900",
+    rs : "796        ",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/s/40141965_3-anandam-pooja-oil.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Anandam",
+    name : "Pooja Oil",
+    kg : "900 g",
+    mrp : "200",
+    rs : "139",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/274184_10-dhara-refined-sunflower-oil.jpg   ",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Dhara",
+    name : "Refined - Sunflower Oil",
+    kg : "5 L Can",
+    mrp : "1075",
+    rs : "880",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/276756_8-fortune-fortune-premium-kachi-ghani-pure-mustard-oil.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Fortune",
+    name : "Premium Kachi Ghani Mustard Oil",
+    kg : "1L Pet Bottle",
+    mrp : "214",
+    rs : "189",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/60000022_12-bb-royal-idli-rice.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "BB Royal",
+    name : "BB Royal",
+    kg : "10 kg Bag",
+    mrp : "600",
+    rs : "399",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/1214150_1-grb-ghee.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "GRB",
+    name : "Ghee",
+    kg : "2x1 L",
+    mrp : "1608",
+    rs : "1608",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/10000491_6-bb-royal-jaggery-square.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "BB Royal",
+    name : "Jaggery - Square",
+    kg : "1 kg",
+    mrp : "100",
+    rs : "78",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/1203206_1-bb-royal-red-chillilal-mirch-200gm-cuminjeera-whole-200gm.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "BB Royal",
+    name : "Red Chilli/Jeera-Whole",
+    kg : "Combo 2 Item",
+    mrp : "260",
+    rs : "169",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/40141959_2-mr-gold-nakshatra-pooja-oil.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "Mr.Gold",
+    name : "Nakshatra Pooja Oil",
+    kg : "1 L",
+    mrp : "205",
+    rs : "184",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+{
+    img : "https://www.bigbasket.com/media/uploads/p/mm/40186969_1-bb-royal-organic-jaggery-powder.jpg",
+    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+    type : "BB Royal",
+    name : "Organic Jaggery/Bella Powder",
+    kg : "1 kg Jar",
+    mrp : "",
+    rs : "",
+    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+},
+]
+  
+  var cart = JSON.parse(localStorage.getItem("addtocart")) || [];
+  display(data);
+
+  function selectfilter() {
+    var filter = document.getElementById("selectfilter").value;
+    console.log(filter);
+    if (filter == "Popularity") {
+    } else if (filter == "low2high") {
+      data.sort(function (a, b) {
+        return a.rs - b.rs;
+      });
+    } else {
+      data.sort(function (a, b) {
+        return b.rs - a.rs;
+      });
+    }
+    // console.log(data);
+    display(data);
+  }
+  
+  function fun() {
+    var rate = document.getElementById("20").value;
+    if (rate == "20") {
+      var ans = data.filter((data) => data.rs < 20);
+      display(ans);
+    }
+  }
+  function fun1() {
+    var rate = document.getElementById("50").value;
+    if (rate == "50") {
+      var ans = data.filter((data) => data.rs < 50 && data.rs > 20);
+      display(ans);
+    }
+  }
+  function fun2() {
+    var rate = document.getElementById("100").value;
+    if (rate == "100") {
+      var ans = data.filter((data) => data.rs < 100 && data.rs > 50);
+      display(ans);
+    }
+  }
+  function fun3() {
+    var rate = document.getElementById("500").value;
+    if (rate == "500") {
+      var ans = data.filter((data) => data.rs < 500 && data.rs > 100);
+      display(ans);
+    }
+  }
+  function fun4() {
+    var rate = document.getElementById("600").value;
+    if (rate == "600") {
+      var ans = data.filter((data) => data.rs > 500);
+      display(ans);
+    }
+  }
+
+  function display(arr) {
+    document.getElementById("items").textContent = "";
+    arr.map(function (elm) {
+      var div = document.createElement("div");
+
+      var div1 = document.createElement("div");
+      var img = document.createElement("img");
+      img.setAttribute("src", elm.img);
+      div1.append(img);
+
+      var veg = document.createElement("img");
+      veg.setAttribute("src", elm.veg);
+      veg.setAttribute("id", "veglogo");
+      var Fresh = document.createElement("p");
+      Fresh.textContent = elm.type;
+      var name = document.createElement("p");
+      name.textContent = elm.name;
+      var select = document.createElement("select");
+      select.setAttribute("id", "selectcart");
+      var option = document.createElement("option");
+      option.setAttribute("value", "gg");
+      var nod = document.createTextNode(elm.kg);
+      option.appendChild(nod);
+      select.appendChild(option);
+
+      var div2 = document.createElement("div");
+      div2.append(veg, Fresh, name, select);
+
+      var mrp = document.createElement("p");
+      mrp.textContent = "MRP : " + elm.mrp;
+      var rs = document.createElement("p");
+      rs.textContent = "RS : " + elm.rs;
+      var dis = document.createElement("p");
+      dis.textContent = elm.des;
+      var div3 = document.createElement("div");
+
+      var qty = document.createElement("p");
+      qty.textContent = "Qty";
+      var ct = document.createElement("input");
+      ct.setAttribute("type", "number");
+      ct.setAttribute("placeholder", "0");
+      ct.setAttribute("id", "countcart");
+
+      var add = document.createElement("button");
+      add.innerHTML = "ADD";
+      add.addEventListener("click", function () {
+        var obj = {
+          image: elm.img,
+          image2: elm.veg,
+          brand: elm.type,
+          name: elm.name,
+          weight: elm.kg,
+          mrp: elm.mrp,
+          rate: elm.rs,
+          desc: elm.des,
+        };
+        cart.push(obj);
+        localStorage.setItem("addtocart", JSON.stringify(cart));
+        console.log(obj);
+      });
+      var div4 = document.createElement("div");
+      div4.append(qty, ct, add);
+      div3.append(mrp, rs, dis, div4);
+      div3.setAttribute("id", "div3");
+      div4.setAttribute("id", "div4");
+      div2.setAttribute("id", "div2");
+      div1.setAttribute("id", "div1");
+
+      div.append(div1, div2, div3);
+      div.addEventListener("click", function () {
+        div.setAttribute("id", "single");
+        document.getElementById("items").textContent = "";
+        document.getElementById("items").append(div);
+      });
+      // console.log(div);
+      document.getElementById("items").append(div);
+    });
+    
+}
+
+</script>

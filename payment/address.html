@@ -105,7 +105,7 @@
               </div>
   
               <div id="address_last_div">
-                <button id="adres" onclick="adres()">ADD ADDRESS</button> <button>CANCEL</button>
+                <button id="adres" onclick="adres()">ADD ADDRESS</button> <button  onclick="checkOut()" >CANCEL</button>
               </div>
             </div>
         </div>
@@ -244,4 +244,8 @@ function adres(){
         document.getElementById("BasketValue").append("Rs" + " "+ Total);
         document.getElementById("TotalPaybleAmount").append("Rs" + " "+ Total);
     }
+   function checkOut(){
+      window.location.href="../checkout page/checkout.html"
+    }
+
 </script>

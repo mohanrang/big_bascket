@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Snacks & Branded Foods</title>
     <style>
       body {
         font-family: Arial, Helvetica, sans-serif;
@@ -18,6 +18,10 @@
         margin: auto;
         place-items: center;
         overflow: hidden;
+        height: 300px;
+      }
+      #topimage1 > img {
+        height: 100%;
       }
       .floting {
         display: flex;
@@ -267,6 +271,13 @@
         background-color: rgb(188, 188, 188);
         color: white;
       }
+
+      /* ul {
+        display: none;
+      }
+      ul li:hover {
+        display: block;
+      } */
     </style>
   </head>
   <body>
@@ -305,50 +316,48 @@
       </div>
     </div>
     <div id="categorypages">
-      <select>
-        <option onclick="">SHOP BY CATEGORY</option>
-        <option onclick="">Fruits & Vegetables</option>
-        <option onclick="">Foodgrains, Oil & Masala</option>
-        <option onclick="">Bakery,Cakes & Dairy</option>
-        <option onclick="">Beverages</option>
-        <option onclick="">Snacks & Branded Foods</option>
-        <option onclick="">Eggs, Meat & Fish</option>
-        <option onclick="">Cleaning & Household</option>
-        <option onclick="">Kitchen, Garden & pets</option>
-        <option onclick="">Gourmet & World Food</option>
-        <option onclick="">Baby Care</option>
+      <select id="dropdown" onclick="filt()">
+        <option >Shop By Category</option>
+        <option value="fruits.html">Foodgrains, Oil & Masala</option>
+        <option value="bakery">Bakery,Cakes & Dairy</option>
+        <option value="Beverages">Beverages</option>
+        <option value="Snacks">Snacks & Branded Foods</option>
+        <option value="Eggs">Eggs, Meat & Fish</option>
+        <option value="Cleaning">Cleaning & Household</option>
+        <option value="Kitchen">Kitchen, Garden & pets</option>
+        <option value="Gourmet">Gourmet & World Food</option>
+        <option value="Baby">Baby Care</li>
       </select>
-      <!-- <button onclick="">SHOP BY CATEGORY</button> -->
     </div>
     <div id="topimage1">
       <div class="floting">
         <span class="slideimg"
           ><img
-            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP8606-1200X300-25thNOV22.jpg"
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16764-1200x300-25thdec.jpg"
         /></span>
         <span class="slideimg"
           ><img
-            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP8603-1200X300-25thNOV22.jpg"
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16690-1200x300-25thdec.jpg"
         /></span>
         <span class="slideimg"
           ><img
-            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP8594-1200X300-25thNOV22.jpg"
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16687-1200x300-25thdec.jpg"
         /></span>
         <span class="slideimg"
           ><img
-            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP8603-1200X300-25thNOV22.jpg"
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17038-1200x300-25thdec.jpg"
         /></span>
         <span class="slideimg"
           ><img
-            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP8600-1200X300-25thNOV22.jpg"
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17466_1200x300_25thnov.jpg"
         /></span>
         <span class="slideimg"
           ><img
-            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP8594-1200X300-25thNOV22.jpg"
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17460_1200x300_25thnov.jpg"
         /></span>
         <span class="slideimg"
           ><img
-            src="https://www.bigbasket.com/media/uploads/banner_images/L1-YXNP8584-1200X300-23rdNOV22.jpg"
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17257_1200x300_25thnov.jpg"
         /></span>
       </div>
     </div>
@@ -674,6 +683,7 @@
     // console.log(data);
     display(data);
   }
+  
   function fun() {
     var rate = document.getElementById("20").value;
     if (rate == "20") {
@@ -787,5 +797,8 @@
       // console.log(div);
       document.getElementById("items").append(div);
     });
+    
+    
   }
+
 </script>

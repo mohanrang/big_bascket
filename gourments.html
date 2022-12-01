@@ -235,6 +235,8 @@
 
       #navigationbar > #navigationbarr > img {
         width: 40px;
+        height: 40px;
+        margin-right: 5px;
       }
       #navigationbar > #navigationbarm > input {
         width: 450px;
@@ -242,6 +244,11 @@
       }
       #navigationbar > #navigationbarl {
         display: block;
+      }
+      #navigationbarr {
+        display: flex;
+        font-size: large;
+        align-items: center;
       }
       /* #navigationbar > #navigationbarm{
         width: 60px;
@@ -271,7 +278,39 @@
         background-color: rgb(188, 188, 188);
         color: white;
       }
+      #footer{
+    background-color: #ffffff;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
 
+#footer .parent1{
+    display: flex;
+    justify-content: space-around;
+}
+    .parent2{
+     width: 90%;
+     margin: auto;
+     
+}
+#footer .child2 h4{
+    width: 900px;
+    color: #79d549;
+}
+#footer .child4 h4{
+    width: 200px;
+    color: #79d549;
+}
+#footer .child3 h4{
+    width: 220px;
+    color: #79d549;
+}
+#footer .child5 h4{
+    margin-top: 25px;
+    width: 170px;
+    color: #79d549;
+}
       /* ul {
         display: none;
       }
@@ -282,7 +321,7 @@
   </head>
   <body>
     <div id="adress">
-      <p>Mohan</p>
+      <p><a href="./signup.html" style="text-decoration: none">profile</a></p>
       <img
         onclick=""
         src="https://thumbs.dreamstime.com/z/avatar-icon-vector-male-user-person-profile-symbol-flat-color-glyph-pictogram-illustration-117610386.jpg"
@@ -310,58 +349,61 @@
       </div>
       <div id="navigationbarr">
         <img
-          onclick=""
+          onclick="window.location.href='./checkout page/checkout.html'"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocXqcZxL79ojfeDRaP_szGq5gAZEpuGPRQelGBR7zagKeZATRUeKcQfm7bt8xEKubRUQ&usqp=CAU"
         />
+        <p id="navigationbarcart">0</p>
       </div>
     </div>
+    <!-- <a href="./bakery.html">Shop By Category</a> -->
     <div id="categorypages">
-      <select id="dropdown" onclick="filt()">
-        <option >Shop By Category</option>
-        <option value="fruits.html">Foodgrains, Oil & Masala</option>
-        <option value="bakery">Bakery,Cakes & Dairy</option>
-        <option value="Beverages">Beverages</option>
-        <option value="Snacks">Snacks & Branded Foods</option>
-        <option value="Eggs">Eggs, Meat & Fish</option>
-        <option value="Cleaning">Cleaning & Household</option>
-        <option value="Kitchen">Kitchen, Garden & pets</option>
-        <option value="Gourmet">Gourmet & World Food</option>
-        <option value="Baby">Baby Care</li>
+      <select id="dropdown">
+        <option>Shop By Category</option>
+        <option value="./fruites.html">Fruits & Vegetables</option>
+        <option value="./foodgrains.html">Foodgrains, Oil & Masala</option>
+        <option value="./bakery.html">Bakery,Cakes & Dairy</option>
+        <option value="./Beverages.html">Beverages</option>
+        <option value="./snack.html">Snacks & Branded Foods</option>
+        <option value="./meatandfish.html">Eggs, Meat & Fish</option>
+        <option value="./cleaning.html">Cleaning & Household</option>
+        <option value="./Kitchen.html">Kitchen, Garden & pets</option>
+        <option value="./gourments.html">Gourmet & World Food</option>
+        <option value="./babycare.html">Baby Care</option>
       </select>
     </div>
     <div id="topimage1">
-        <div class="floting">
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16612-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16591-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16584-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16558-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16988.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16782-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16642-1200x300-25thdec.jpg"
-          /></span>
-        </div>
+      <div class="floting">
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16612-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16591-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16584-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16558-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16988.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16782-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16642-1200x300-25thdec.jpg"
+        /></span>
       </div>
-      <div id="top2image">
+    </div>
+    <div id="top2image">
       <img
         src="https://www.bigbasket.com/media/uploads/flatpages/test-1/Fruits%20&%20vegetables.jpg"
       />
@@ -441,253 +483,322 @@
       </div>
       <div id="items"></div>
     </div>
+    <div id="footer">
+ 
+        <div class="parent1">
+            <div class="child">
+                <h4 style="color:#79d549;">bigbasket</h4>
+                <p>About Us</p>
+                <p>In News</p>
+                <p>Green bigbasket</p>
+                <p>Privacy Policy</p>
+                <p>Affiliate</p>
+                <p>Terms and Conditions</p>
+                <p>Careers At bigbasket</p>
+                <p>bb Instant</p>
+                <p>bb Daily</p>
+                <p>bb Blog</p>
+            
+              
+            </div>
+            <div class="child">
+                <h4 style="color:#79d549;">Help</h4>
+                <p>FAQs</p>
+                <p>Contact Us</p>
+                <p>bb Wallet FAQs</p>
+                <p>bb Wallet T&Cs</p>
+                <p>Vendor Connect</p>
+            </div>
+            <div class="child">
+                <h4 style="color:#79d549;">Download Our App</h4>
+                <div><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/Google-App-store-icon.png" alt=""></div>
+                <div><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/Apple-App-store-icon.png" alt=""></div>
+            </div>
+            <div class="child">
+                <h4 style="color:#79d549;">Get Social With Us</h4>
+               <div style="display: flex;">
+                <div class="ja"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="" style="height: 42px;width: 43px; padding: 0px 5px 5px 5px; "></div>
+                <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBjAAckYjOVIIsiqhARym2rHjJ2i2JiyH4Q&usqp=CAU" alt="" style="height: 40px;width: 40px;padding: 0px 5px 5px 5px; "></div>
+                <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstfv9_bPbqdcnazcz6VzU5PF7NggkPuG03Q&usqp=CAU" alt="" style="height: 40px;width: 40px; padding: 0px 5px 5px 5px;"></div>
+                <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRaekzA4ZW-1ZXQdwSVSlVBcTCoa6SyiAIaQ&usqp=CAU" alt="" style="height: 40px;width: 40px;padding: 0px 5px 5px 5px; "></div>
+               </div>
+            </div>
+        </div>
+        <div class="parent2">
+            <div class="child4" style="display:flex;">
+                <h4 >POPULAR CATEGORIES:</h4>
+                <p>
+                    Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food, Diapers & Wipes,</p>
+            </div>
+
+
+            <div class="child3" style="display: flex;">
+                <h4 >POPULAR BRAND:</h4>
+                <p>
+      Amul, Nescafe , MTR, Red Bull, elite cake, Pediasure, Yummiez, Yera, Yakult, Britannia, Wow Momo, Fortune , Haldirams , Ferrero, Lays, Patanjali, McCain, kwality walls, Cadbury Dairy Milk, Pedigree,</p>
+            </div>
+            <div class="child2" style="display: flex;">
+                <h4 > CITIES WE SERVE:</h4>
+                <p>Bangalore,Hyderabad,Mumbai,Pune,Chennai,Delhi,Mysore,Madurai,Coimbatore,Vijayawada-Guntur,Kolkata,Ahmedabad-Gandhinagar,Nashik Business,Lucknow-Kanpur,Gurgaon,Vadodara,Visakhapatnam,Surat,Nagpur,Patna,Indore,Chandigarh Tricity,Jaipur,Bhopal,Noida-Ghaziabad,Kochi,Krishna District,Bhubaneshwar-Cuttack,Guwahati,Renigunta,Hubli,Davanagere,Trichy,Amravati,Raipur,Rajkot,Gwalior,Bareilly,Allahabad,Hyderabad Rural,Bangalore Rural,Chennai Rural,Vizag Rural,Lucknow Rural,Noida Rural,Ahmedabad Rural,Bhopal Rural,Bhubaneswar Rural,Coimbatore Rural,Chandigarh Rural,Gurugram Rural,Guwahati Rural,Indore Rural,Kochi Rural,Kolkata Rural,Mumbai Rural,Mysore Rural,Nagpur Rural,Patna Rural,Pune Rural,Surat Rural,Vadodara Rural,Jaipur Rural,Ranchi,Nashik,Agra,Kozhikode,</div>
+            <div class="child5" style="display: flex;">
+                <h4 > PAYMENT OPTIONS:  &#160  &#160  &#160 </h4>
+                <img src="https://ecoheater.ie/wp-content/uploads/2018/10/cards-.jpg" alt="" style="height: 100px;width: 500px;">
+      
+            </div>
+        </div>
+      </div>
   </body>
 </html>
-<script>var data =[
+<script>
+  var data = [
     {
-          img : "https://www.bigbasket.com/media/uploads/p/s/40191534_1-borges-extra-virgin-olive-oil.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "BORGES",
-          name : "Olive Oil",
-          kg : "2 L PET Bottle",
-          mrp : "2700",
-          rs : "1512",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/s/40094923_7-nutella-hazelnut-spread-with-cocoa.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Nutella",
-          name : "Hazelnut Spread",
-          kg : "350 g Jar",
-          mrp : "380",
-          rs : "326",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/s/1220649_1-the-laughing-cow-cheese-slices.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "The Laughing Cow",
-          name : "Cheese Slices",
-          kg : "2x408 g",
-          mrp : "870",
-          rs : "619.88",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/s/40046546_5-epigamia-greek-yogurt-natural.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Epigamia",
-          name : "Greek Yogurt",
-          kg : "90 g Cup",
-          mrp : "60",
-          rs : "55",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/s/303219_9-borges-durum-wheat-pasta-penne-rigate.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "BORGES",
-          name : "Wheat Pasta",
-          kg : "500 g",
-          mrp : "299",
-          rs : "149.50",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/s/40167617_7-gooddiet-ragi-sticks-achari-masala.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "GoodDiet",
-          name : "Ragi Sticks",
-          kg : "30 g",
-          mrp : "19",
-          rs : "17",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/s/30005535_6-cornitos-nacho-chips-cheese-herbs.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Cornitos",
-          name : "Nacho Chips",
-          kg : "55 g",
-          mrp : "35",
-          rs : "33.95",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/s/100334329_6-mogu-mogu-juice-grape.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Mogu Mogu",
-          name : "Juice - Grape",
-          kg : "300 ml",
-          mrp : "75",
-          rs : "70",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40112938_6-cornitos-roasted-cashews-pepper-herbs.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Cornitos",
-          name : "Cornitos Roasted Cashews",
-          kg : "25 g",
-          mrp : "50",
-          rs : "48",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/288824_7-mogu-mogu-juice-lychee.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Mogu Mogu",
-          name : "Juice - Lychee",
-          kg : "300 ml",
-          mrp : "75",
-          rs : "70",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40076830_6-fresho-signature-dry-fruit-mix.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Fresho Signature",
-          name : "Mixed Fruit",
-          kg : "150 g",
-          mrp : "196",
-          rs : "155",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40123724_6-happilo-premium-international-omani-dates.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Happilo",
-          name : "Omani Dates",
-          kg : "250 g",
-          mrp : "175",
-          rs : "148.75",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/1219004_1-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Epigamia Origins",
-          name : "Vanilla Milkshake",
-          kg : "3x180 ml",
-          mrp : "105",
-          rs : "90.21",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40120049_4-epigamia-curd-artisanal.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Epigamia",
-          name : "Artisanal Curd",
-          kg : "400 g Cup",
-          mrp : "112",
-          rs : "100",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/118214_14-ferrero-rocher-chocolate.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Ferrero",
-          name : "Chocolate",
-          kg : "16 Pcs Box",
-          mrp : "530",
-          rs : "529",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/1208406_4-gooddiet-healthy-spicy-mix.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "GoodDiet",
-          name : "Healthy Spicy Mix",
-          kg : "Combo (5 Items)",
-          mrp : "95",
-          rs : "76.05",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40023033_3-rostaa-almonds-roasted-salted.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : " Rostaa",
-          name : "Almonds",
-          kg : "35 g Pouch",
-          mrp : "99",
-          rs : "90",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40128980_3-disano-olive-oil-extra-light.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Disano",
-          name : "Extra Light Olive Oil",
-          kg : "2 L Bottle",
-          mrp : "3045",
-          rs : "1309.35",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40121247_6-puro-salt-unrefined-100-natural.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Puro",
-          name : "Healthy Salt",
-          kg : "1 kg Pouch",
-          mrp : "120",
-          rs : "110",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/1205129_5-dabur-hommade-coconut-milk.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Dabur",
-          name : " Coconut Milk",
-          kg : "3x200 ml",
-          mrp : "225",
-          rs : "164.40",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40177622_5-gery-gone-mad-choco-pillow.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Gery Gone Mad",
-          name : "Choco Pillow",
-          kg : "20 g",
-          mrp : "10",
-          rs : "9",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/30004274_7-hersheys-cocoa-powder.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Hersheys",
-          name : "Cocoa Powder",
-          kg : "225 g Bottle",
-          mrp : "300",
-          rs : "285",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40071518_7-cornitos-nacho-chips-peri-peri.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Cornitos",
-          name : "Nacho Chips",
-          kg : "55 g Pouch",
-          mrp : "35",
-          rs : "32.90",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-      {
-          img : "https://www.bigbasket.com/media/uploads/p/mm/40142719_1-samyang-ramen-noodles-hot-chicken-flavour-2x-spicy.jpg",
-          veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-          type : "Samyang",
-          name : "Ramen Noodles",
-          kg : "140 g",
-          mrp : "139",
-          rs : "130",
-          des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-      },
-  ]  
-  
+      img: "https://www.bigbasket.com/media/uploads/p/s/40191534_1-borges-extra-virgin-olive-oil.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "BORGES",
+      name: "Olive Oil",
+      kg: "2 L PET Bottle",
+      mrp: "2700",
+      rs: "1512",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40094923_7-nutella-hazelnut-spread-with-cocoa.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Nutella",
+      name: "Hazelnut Spread",
+      kg: "350 g Jar",
+      mrp: "380",
+      rs: "326",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/1220649_1-the-laughing-cow-cheese-slices.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "The Laughing Cow",
+      name: "Cheese Slices",
+      kg: "2x408 g",
+      mrp: "870",
+      rs: "619.88",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40046546_5-epigamia-greek-yogurt-natural.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Epigamia",
+      name: "Greek Yogurt",
+      kg: "90 g Cup",
+      mrp: "60",
+      rs: "55",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/303219_9-borges-durum-wheat-pasta-penne-rigate.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "BORGES",
+      name: "Wheat Pasta",
+      kg: "500 g",
+      mrp: "299",
+      rs: "149.50",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40167617_7-gooddiet-ragi-sticks-achari-masala.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "GoodDiet",
+      name: "Ragi Sticks",
+      kg: "30 g",
+      mrp: "19",
+      rs: "17",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/30005535_6-cornitos-nacho-chips-cheese-herbs.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Cornitos",
+      name: "Nacho Chips",
+      kg: "55 g",
+      mrp: "35",
+      rs: "33.95",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/100334329_6-mogu-mogu-juice-grape.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Mogu Mogu",
+      name: "Juice - Grape",
+      kg: "300 ml",
+      mrp: "75",
+      rs: "70",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40112938_6-cornitos-roasted-cashews-pepper-herbs.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Cornitos",
+      name: "Cornitos Roasted Cashews",
+      kg: "25 g",
+      mrp: "50",
+      rs: "48",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/288824_7-mogu-mogu-juice-lychee.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Mogu Mogu",
+      name: "Juice - Lychee",
+      kg: "300 ml",
+      mrp: "75",
+      rs: "70",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40076830_6-fresho-signature-dry-fruit-mix.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Fresho Signature",
+      name: "Mixed Fruit",
+      kg: "150 g",
+      mrp: "196",
+      rs: "155",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40123724_6-happilo-premium-international-omani-dates.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Happilo",
+      name: "Omani Dates",
+      kg: "250 g",
+      mrp: "175",
+      rs: "148.75",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/1219004_1-epigamia-origins-vanilla-milkshake-contains-vitamin-a.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Epigamia Origins",
+      name: "Vanilla Milkshake",
+      kg: "3x180 ml",
+      mrp: "105",
+      rs: "90.21",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40120049_4-epigamia-curd-artisanal.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Epigamia",
+      name: "Artisanal Curd",
+      kg: "400 g Cup",
+      mrp: "112",
+      rs: "100",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/118214_14-ferrero-rocher-chocolate.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Ferrero",
+      name: "Chocolate",
+      kg: "16 Pcs Box",
+      mrp: "530",
+      rs: "529",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/1208406_4-gooddiet-healthy-spicy-mix.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "GoodDiet",
+      name: "Healthy Spicy Mix",
+      kg: "Combo (5 Items)",
+      mrp: "95",
+      rs: "76.05",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40023033_3-rostaa-almonds-roasted-salted.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: " Rostaa",
+      name: "Almonds",
+      kg: "35 g Pouch",
+      mrp: "99",
+      rs: "90",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40128980_3-disano-olive-oil-extra-light.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Disano",
+      name: "Extra Light Olive Oil",
+      kg: "2 L Bottle",
+      mrp: "3045",
+      rs: "1309.35",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40121247_6-puro-salt-unrefined-100-natural.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Puro",
+      name: "Healthy Salt",
+      kg: "1 kg Pouch",
+      mrp: "120",
+      rs: "110",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/1205129_5-dabur-hommade-coconut-milk.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Dabur",
+      name: " Coconut Milk",
+      kg: "3x200 ml",
+      mrp: "225",
+      rs: "164.40",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40177622_5-gery-gone-mad-choco-pillow.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Gery Gone Mad",
+      name: "Choco Pillow",
+      kg: "20 g",
+      mrp: "10",
+      rs: "9",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/30004274_7-hersheys-cocoa-powder.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Hersheys",
+      name: "Cocoa Powder",
+      kg: "225 g Bottle",
+      mrp: "300",
+      rs: "285",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40071518_7-cornitos-nacho-chips-peri-peri.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Cornitos",
+      name: "Nacho Chips",
+      kg: "55 g Pouch",
+      mrp: "35",
+      rs: "32.90",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40142719_1-samyang-ramen-noodles-hot-chicken-flavour-2x-spicy.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Samyang",
+      name: "Ramen Noodles",
+      kg: "140 g",
+      mrp: "139",
+      rs: "130",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+  ];
+
   var cart = JSON.parse(localStorage.getItem("addtocart")) || [];
   display(data);
+
+  document.getElementById("dropdown").addEventListener("change", function (e) {
+    window.location.href = e.target.value;
+  });
 
   function selectfilter() {
     var filter = document.getElementById("selectfilter").value;
@@ -705,7 +816,7 @@
     // console.log(data);
     display(data);
   }
-  
+
   function fun() {
     var rate = document.getElementById("20").value;
     if (rate == "20") {
@@ -788,6 +899,12 @@
       var add = document.createElement("button");
       add.innerHTML = "ADD";
       add.addEventListener("click", function () {
+        var qty = document.getElementById("countcart").value;
+        if(!qty){
+            window.alert("plz enter quntity");
+             return;
+        }
+        // console.log(qty);
         var obj = {
           image: elm.img,
           image2: elm.veg,
@@ -797,10 +914,25 @@
           mrp: elm.mrp,
           rate: elm.rs,
           desc: elm.des,
+          qty : Number(qty),
         };
-        cart.push(obj);
+        
+        var update= true;
+
+        cart.filter(function(el, ind){
+            
+            if(el.name == obj.name){
+                el.qty+=obj.qty;
+                update = false;
+            }
+        })
+        if(update){
+            cart.push(obj);
+        }
+        
         localStorage.setItem("addtocart", JSON.stringify(cart));
         console.log(obj);
+        document.getElementById("navigationbarcart").innerHTML = cart.length;
       });
       var div4 = document.createElement("div");
       div4.append(qty, ct, add);
@@ -819,7 +951,6 @@
       // console.log(div);
       document.getElementById("items").append(div);
     });
-    
-}
-
+    document.getElementById("navigationbarcart").innerHTML = cart.length;
+  }
 </script>

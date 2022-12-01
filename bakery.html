@@ -235,6 +235,8 @@
 
       #navigationbar > #navigationbarr > img {
         width: 40px;
+        height: 40px;
+        margin-right: 5px;
       }
       #navigationbar > #navigationbarm > input {
         width: 450px;
@@ -242,6 +244,11 @@
       }
       #navigationbar > #navigationbarl {
         display: block;
+      }
+      #navigationbarr {
+        display: flex;
+        font-size: large;
+        align-items: center;
       }
       /* #navigationbar > #navigationbarm{
         width: 60px;
@@ -271,7 +278,39 @@
         background-color: rgb(188, 188, 188);
         color: white;
       }
+      #footer{
+    background-color: #ffffff;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+}
 
+#footer .parent1{
+    display: flex;
+    justify-content: space-around;
+}
+    .parent2{
+     width: 90%;
+     margin: auto;
+     
+}
+#footer .child2 h4{
+    width: 900px;
+    color: #79d549;
+}
+#footer .child4 h4{
+    width: 200px;
+    color: #79d549;
+}
+#footer .child3 h4{
+    width: 220px;
+    color: #79d549;
+}
+#footer .child5 h4{
+    margin-top: 25px;
+    width: 170px;
+    color: #79d549;
+}
       /* ul {
         display: none;
       }
@@ -282,7 +321,7 @@
   </head>
   <body>
     <div id="adress">
-      <p>Mohan</p>
+      <p><a href="./signup.html" style="text-decoration: none">profile</a></p>
       <img
         onclick=""
         src="https://thumbs.dreamstime.com/z/avatar-icon-vector-male-user-person-profile-symbol-flat-color-glyph-pictogram-illustration-117610386.jpg"
@@ -310,57 +349,59 @@
       </div>
       <div id="navigationbarr">
         <img
-          onclick=""
+          onclick="window.location.href='./checkout page/checkout.html'"
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQocXqcZxL79ojfeDRaP_szGq5gAZEpuGPRQelGBR7zagKeZATRUeKcQfm7bt8xEKubRUQ&usqp=CAU"
         />
+        <p id="navigationbarcart">0</p>
       </div>
     </div>
     <div id="categorypages">
-      <select id="dropdown" onclick="filt()">
-        <option >Shop By Category</option>
-        <option value="fruits.html">Foodgrains, Oil & Masala</option>
-        <option value="bakery">Bakery,Cakes & Dairy</option>
-        <option value="Beverages">Beverages</option>
-        <option value="Snacks">Snacks & Branded Foods</option>
-        <option value="Eggs">Eggs, Meat & Fish</option>
-        <option value="Cleaning">Cleaning & Household</option>
-        <option value="Kitchen">Kitchen, Garden & pets</option>
-        <option value="Gourmet">Gourmet & World Food</option>
-        <option value="Baby">Baby Care</li>
+      <select id="dropdown">
+        <option>Shop By Category</option>
+        <option value="./fruites.html">Fruits & Vegetables</option>
+        <option value="./foodgrains.html">Foodgrains, Oil & Masala</option>
+        <option value="./bakery.html">Bakery,Cakes & Dairy</option>
+        <option value="./Beverages.html">Beverages</option>
+        <option value="./snack.html">Snacks & Branded Foods</option>
+        <option value="./meatandfish.html">Eggs, Meat & Fish</option>
+        <option value="./cleaning.html">Cleaning & Household</option>
+        <option value="./Kitchen.html">Kitchen, Garden & pets</option>
+        <option value="./gourments.html">Gourmet & World Food</option>
+        <option value="./babycare.html">Baby Care</option>
       </select>
     </div>
     <div id="topimage1">
-        <div class="floting">
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16717-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16685-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16602-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16595-1200x300-25thdec.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17014.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17434_1200x300_25thnov.jpg"
-          /></span>
-          <span class="slideimg"
-            ><img
-              src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16773-1200x300-25thdec.jpg"
-          /></span>
-        </div>
+      <div class="floting">
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16717-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16685-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16602-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16595-1200x300-25thdec.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17014.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL17434_1200x300_25thnov.jpg"
+        /></span>
+        <span class="slideimg"
+          ><img
+            src="https://www.bigbasket.com/media/uploads/banner_images/YXPL16773-1200x300-25thdec.jpg"
+        /></span>
       </div>
+    </div>
     <div id="top2image">
       <img
         src="https://www.bigbasket.com/media/uploads/flatpages/test-1/Fruits%20&%20vegetables.jpg"
@@ -441,307 +482,375 @@
       </div>
       <div id="items"></div>
     </div>
+    <div id="footer">
+ 
+        <div class="parent1">
+            <div class="child">
+                <h4 style="color:#79d549;">bigbasket</h4>
+                <p>About Us</p>
+                <p>In News</p>
+                <p>Green bigbasket</p>
+                <p>Privacy Policy</p>
+                <p>Affiliate</p>
+                <p>Terms and Conditions</p>
+                <p>Careers At bigbasket</p>
+                <p>bb Instant</p>
+                <p>bb Daily</p>
+                <p>bb Blog</p>
+            
+              
+            </div>
+            <div class="child">
+                <h4 style="color:#79d549;">Help</h4>
+                <p>FAQs</p>
+                <p>Contact Us</p>
+                <p>bb Wallet FAQs</p>
+                <p>bb Wallet T&Cs</p>
+                <p>Vendor Connect</p>
+            </div>
+            <div class="child">
+                <h4 style="color:#79d549;">Download Our App</h4>
+                <div><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/Google-App-store-icon.png" alt=""></div>
+                <div><img src="https://www.bbassets.com/static/v2514/custPage/build/content/img/Apple-App-store-icon.png" alt=""></div>
+            </div>
+            <div class="child">
+                <h4 style="color:#79d549;">Get Social With Us</h4>
+               <div style="display: flex;">
+                <div class="ja"><img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Facebook_Logo.png" alt="" style="height: 42px;width: 43px; padding: 0px 5px 5px 5px; "></div>
+                <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTBjAAckYjOVIIsiqhARym2rHjJ2i2JiyH4Q&usqp=CAU" alt="" style="height: 40px;width: 40px;padding: 0px 5px 5px 5px; "></div>
+                <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQstfv9_bPbqdcnazcz6VzU5PF7NggkPuG03Q&usqp=CAU" alt="" style="height: 40px;width: 40px; padding: 0px 5px 5px 5px;"></div>
+                <div class="ja"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRaekzA4ZW-1ZXQdwSVSlVBcTCoa6SyiAIaQ&usqp=CAU" alt="" style="height: 40px;width: 40px;padding: 0px 5px 5px 5px; "></div>
+               </div>
+            </div>
+        </div>
+        <div class="parent2">
+            <div class="child4" style="display:flex;">
+                <h4 >POPULAR CATEGORIES:</h4>
+                <p>
+                    Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food, Diapers & Wipes,</p>
+            </div>
+
+
+            <div class="child3" style="display: flex;">
+                <h4 >POPULAR BRAND:</h4>
+                <p>
+      Amul, Nescafe , MTR, Red Bull, elite cake, Pediasure, Yummiez, Yera, Yakult, Britannia, Wow Momo, Fortune , Haldirams , Ferrero, Lays, Patanjali, McCain, kwality walls, Cadbury Dairy Milk, Pedigree,</p>
+            </div>
+            <div class="child2" style="display: flex;">
+                <h4 > CITIES WE SERVE:</h4>
+                <p>Bangalore,Hyderabad,Mumbai,Pune,Chennai,Delhi,Mysore,Madurai,Coimbatore,Vijayawada-Guntur,Kolkata,Ahmedabad-Gandhinagar,Nashik Business,Lucknow-Kanpur,Gurgaon,Vadodara,Visakhapatnam,Surat,Nagpur,Patna,Indore,Chandigarh Tricity,Jaipur,Bhopal,Noida-Ghaziabad,Kochi,Krishna District,Bhubaneshwar-Cuttack,Guwahati,Renigunta,Hubli,Davanagere,Trichy,Amravati,Raipur,Rajkot,Gwalior,Bareilly,Allahabad,Hyderabad Rural,Bangalore Rural,Chennai Rural,Vizag Rural,Lucknow Rural,Noida Rural,Ahmedabad Rural,Bhopal Rural,Bhubaneswar Rural,Coimbatore Rural,Chandigarh Rural,Gurugram Rural,Guwahati Rural,Indore Rural,Kochi Rural,Kolkata Rural,Mumbai Rural,Mysore Rural,Nagpur Rural,Patna Rural,Pune Rural,Surat Rural,Vadodara Rural,Jaipur Rural,Ranchi,Nashik,Agra,Kozhikode,</div>
+            <div class="child5" style="display: flex;">
+                <h4 > PAYMENT OPTIONS:  &#160  &#160  &#160 </h4>
+                <img src="https://ecoheater.ie/wp-content/uploads/2018/10/cards-.jpg" alt="" style="height: 100px;width: 500px;">
+      
+            </div>
+        </div>
+      </div>
   </body>
 </html>
 <script>
-  var data =[
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/264679_4-milky-mist-paneer-premium-fresh.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Milky Mist",
-    name : "Paneer - Rich In Protein",
-    kg : "200 g Ponch-Rs 97.00",
-    mrp : "120",
-    rs : "97",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/40003162_5-milky-mist-curd-farm-fresh.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Milky mist",
-    name : "Curd/Dahi",
-    kg : "500 g pouch-Rs 46.00",
-    mrp : "46",
-    rs : "46",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/100285703_15-nandini-goodlife-toned-milk.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Nandini",
-    name : "Toned Milk",
-    kg : "1 L Carton",
-    mrp : "60",
-    rs : "60",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/1204991_3-amul-butter-pasteurized.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Amul",
-    name : "Butter-Pasteurized",
-    kg : "400g",
-    mrp : "216",
-    rs : "204",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/242671_1-nandini-goodlife-toned-milk.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Nandini",
-    name : "Toned milk",
-    kg : "500 ml pouch",
-    mrp : "29",
-    rs : "27",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/244999_1-nandini-goodlife-toned-milk.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Nandini",
-    name : "Toned milk",
-    kg : "20x500 ml pouch",
-    mrp : "560",
-    rs : "560",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/1204353_1-fresho-bread-brown-chemical-free-400g-eggs-regular-6pcs.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Fresho",
-    name : "Bread,Eggs-Regular 6pcs",
-    kg : "Combo 2 items",
-    mrp : "105",
-    rs : "103",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/279588_6-amul-malai-paneer.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Amul",
-    name : "Malai Panner",
-    kg : "200 g",
-    mrp : "87",
-    rs : "84",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/40204406_1-britannia-chocolate-brownie.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Britannia",
-    name : "Fudge It Brownie - Chocolate",
-    kg : "40g",
-    mrp : "20",
-    rs : "20",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/1214334_3-britannia-treat-croissant-cocoa-creme-roll-100-veg.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Britannia",
-    name : "Treat Croissant",
-    kg : "6x45 g",
-    mrp : "120",
-    rs : "85.56",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/242673_1-nandini-slim-skimmed-milk.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Nandini",
-    name : "Skimmed Milk",
-    kg : "500ml pouch",
-    mrp : "27",
-    rs : "27",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/1202753_1-amul-lactose-free-milk.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Amul",
-    name : "Lactose Free Milk",
-    kg : "6x250ml",
-    mrp : "150",
-    rs : "147",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/229136_3-amul-cheese-slices.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Amul",
-    name : "Cheese Slices",
-    kg : "750 g(50 Slices)",
-    mrp : "410",
-    rs : "386",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/40025355_6-fresho-whole-wheat-bread-safe-preservative-free.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Freshocf",
-    name : "Whole Wheat Bread ",
-    kg : "400 g",
-    mrp : "55",
-    rs : "55",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/1203925_2-britannia-bake-rusk-toast.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Britannia",
-    name : "Bake Rusk(Toast)",
-    kg : "6x63 g",
-    mrp : "60",
-    rs : "57",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/292620_11-yakult-probiotic-health-drink.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Yakult",
-    name : "Probiotic Fermented Health Drink",
-    kg : "325ml Pack of 5 ",
-    mrp : "80",
-    rs : "75.50",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/40088412_6-hersheys-milk-shake-chocolate.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Hersheys",
-    name : "Milk Shake-Chocolate",
-    kg : "180ml",
-    mrp : "35",
-    rs : "32.55",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
+  var data = [
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/264679_4-milky-mist-paneer-premium-fresh.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Milky Mist",
+      name: "Paneer - Rich In Protein",
+      kg: "200 g Ponch-Rs 97.00",
+      mrp: "120",
+      rs: "97",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40003162_5-milky-mist-curd-farm-fresh.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Milky mist",
+      name: "Curd/Dahi",
+      kg: "500 g pouch-Rs 46.00",
+      mrp: "46",
+      rs: "46",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/100285703_15-nandini-goodlife-toned-milk.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Nandini",
+      name: "Toned Milk",
+      kg: "1 L Carton",
+      mrp: "60",
+      rs: "60",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/1204991_3-amul-butter-pasteurized.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Amul",
+      name: "Butter-Pasteurized",
+      kg: "400g",
+      mrp: "216",
+      rs: "204",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/242671_1-nandini-goodlife-toned-milk.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Nandini",
+      name: "Toned milk",
+      kg: "500 ml pouch",
+      mrp: "29",
+      rs: "27",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/244999_1-nandini-goodlife-toned-milk.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Nandini",
+      name: "Toned milk",
+      kg: "20x500 ml pouch",
+      mrp: "560",
+      rs: "560",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/1204353_1-fresho-bread-brown-chemical-free-400g-eggs-regular-6pcs.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Fresho",
+      name: "Bread,Eggs-Regular 6pcs",
+      kg: "Combo 2 items",
+      mrp: "105",
+      rs: "103",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/279588_6-amul-malai-paneer.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Amul",
+      name: "Malai Panner",
+      kg: "200 g",
+      mrp: "87",
+      rs: "84",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40204406_1-britannia-chocolate-brownie.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Britannia",
+      name: "Fudge It Brownie - Chocolate",
+      kg: "40g",
+      mrp: "20",
+      rs: "20",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/1214334_3-britannia-treat-croissant-cocoa-creme-roll-100-veg.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Britannia",
+      name: "Treat Croissant",
+      kg: "6x45 g",
+      mrp: "120",
+      rs: "85.56",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/242673_1-nandini-slim-skimmed-milk.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Nandini",
+      name: "Skimmed Milk",
+      kg: "500ml pouch",
+      mrp: "27",
+      rs: "27",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/1202753_1-amul-lactose-free-milk.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Amul",
+      name: "Lactose Free Milk",
+      kg: "6x250ml",
+      mrp: "150",
+      rs: "147",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/229136_3-amul-cheese-slices.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Amul",
+      name: "Cheese Slices",
+      kg: "750 g(50 Slices)",
+      mrp: "410",
+      rs: "386",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40025355_6-fresho-whole-wheat-bread-safe-preservative-free.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Freshocf",
+      name: "Whole Wheat Bread ",
+      kg: "400 g",
+      mrp: "55",
+      rs: "55",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/1203925_2-britannia-bake-rusk-toast.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Britannia",
+      name: "Bake Rusk(Toast)",
+      kg: "6x63 g",
+      mrp: "60",
+      rs: "57",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/292620_11-yakult-probiotic-health-drink.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Yakult",
+      name: "Probiotic Fermented Health Drink",
+      kg: "325ml Pack of 5 ",
+      mrp: "80",
+      rs: "75.50",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40088412_6-hersheys-milk-shake-chocolate.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Hersheys",
+      name: "Milk Shake-Chocolate",
+      kg: "180ml",
+      mrp: "35",
+      rs: "32.55",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
 
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/274920_14-sofit-soya-drink-vanilla.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "sofit",
-    name : "Soya Drink Vanilla",
-    kg : "1 L Tetra",
-    mrp : "145",
-    rs : "116",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/274920_14-sofit-soya-drink-vanilla.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "sofit",
+      name: "Soya Drink Vanilla",
+      kg: "1 L Tetra",
+      mrp: "145",
+      rs: "116",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
 
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/125546_8-nestle-everyday-dairy-whitener-milk-powder-for-tea.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Nestle",
-    name : "Milk Powder for Tea",
-    kg : "1 kg Pouch",
-    mrp : "570",
-    rs : "550",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/40026295_2-amul-lassi.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Amul",
-    name : "Lassi-Rose Flavour",
-    kg : "250ml Corton",
-    mrp : "23",
-    rs : "23",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/40066207_6-so-good-plant-based-almond-beverage-unsweetened-rich-in-calcium-vitamins-vegan.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "So Good",
-    name : "Almond Milk",
-    kg : "1 L Tetra Pack",
-    mrp : "295",
-    rs : "280",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/40164581_5-farm-connect-organic-high-protein-paneer.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Farm Connect",
-    name : "Organic High Protein Paneer",
-    kg : "200 g",
-    mrp : "110",
-    rs : "110",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/s/1213687_1-nandini-cooking-butter-unsalted.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Nandini",
-    name : "Cooking Butter - Unsalted",
-    kg : "2x500 g",
-    mrp : "510",
-    rs : "466.48",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/mm/1213744_1-sunfeast-chocolate-shake-with-real-belgian-chocolate.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Sunfeast",
-    name : "Dark Fantasy Belgian Chocolate Shake",
-    kg : "3x180 ml",
-    mrp : "120",
-    rs : "89.76",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/125546_8-nestle-everyday-dairy-whitener-milk-powder-for-tea.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Nestle",
+      name: "Milk Powder for Tea",
+      kg: "1 kg Pouch",
+      mrp: "570",
+      rs: "550",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40026295_2-amul-lassi.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Amul",
+      name: "Lassi-Rose Flavour",
+      kg: "250ml Corton",
+      mrp: "23",
+      rs: "23",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40066207_6-so-good-plant-based-almond-beverage-unsweetened-rich-in-calcium-vitamins-vegan.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "So Good",
+      name: "Almond Milk",
+      kg: "1 L Tetra Pack",
+      mrp: "295",
+      rs: "280",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/40164581_5-farm-connect-organic-high-protein-paneer.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Farm Connect",
+      name: "Organic High Protein Paneer",
+      kg: "200 g",
+      mrp: "110",
+      rs: "110",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/s/1213687_1-nandini-cooking-butter-unsalted.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Nandini",
+      name: "Cooking Butter - Unsalted",
+      kg: "2x500 g",
+      mrp: "510",
+      rs: "466.48",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/1213744_1-sunfeast-chocolate-shake-with-real-belgian-chocolate.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Sunfeast",
+      name: "Dark Fantasy Belgian Chocolate Shake",
+      kg: "3x180 ml",
+      mrp: "120",
+      rs: "89.76",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
 
-{
-    img : "https://www.bigbasket.com/media/uploads/bpi/bangalore/mm/40189284_3-mother-dairy-malai-paneer-rich-in-protein-calcium-made-from-cows-milk-creamy-for-snacks-gravy-dishes.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Mother Dairy",
-    name : " Malai Paneer",
-    kg : "200 g",
-    mrp : "89",
-    rs : "75.65",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/mm/40018937_8-briyas-tofu-soya-paneer.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "briyas",
-    name : "Tofu Panner",
-    kg : "200 g",
-    mrp : "99",
-    rs : "50",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/mm/40004522_5-mother-dairy-misti-doi.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Mother Dairy",
-    name : "Mishti Doi",
-    kg : "80 g Cup",
-    mrp : "20",
-    rs : "20",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
+    {
+      img: "https://www.bigbasket.com/media/uploads/bpi/bangalore/mm/40189284_3-mother-dairy-malai-paneer-rich-in-protein-calcium-made-from-cows-milk-creamy-for-snacks-gravy-dishes.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Mother Dairy",
+      name: " Malai Paneer",
+      kg: "200 g",
+      mrp: "89",
+      rs: "75.65",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40018937_8-briyas-tofu-soya-paneer.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "briyas",
+      name: "Tofu Panner",
+      kg: "200 g",
+      mrp: "99",
+      rs: "50",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40004522_5-mother-dairy-misti-doi.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Mother Dairy",
+      name: "Mishti Doi",
+      kg: "80 g Cup",
+      mrp: "20",
+      rs: "20",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
 
-{
-    img : "https://www.bigbasket.com/media/uploads/p/mm/40025357_4-fresho-pav-safe-preservative-free.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Fresho",
-    name : "Pav",
-    kg : "300 g",
-    mrp : "39",
-    rs : "39",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-{
-    img : "https://www.bigbasket.com/media/uploads/p/mm/277882_4-bauli-moonfils-choco-cream.jpg",
-    veg : "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
-    type : "Bauli",
-    name : "Moonfils",
-    kg : "50 g Pouch",
-    mrp : "20",
-    rs : "15",
-    des : "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
-},
-]
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/40025357_4-fresho-pav-safe-preservative-free.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Fresho",
+      name: "Pav",
+      kg: "300 g",
+      mrp: "39",
+      rs: "39",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+    {
+      img: "https://www.bigbasket.com/media/uploads/p/mm/277882_4-bauli-moonfils-choco-cream.jpg",
+      veg: "https://i.pinimg.com/originals/e4/1f/f3/e41ff3b10a26b097602560180fb91a62.png",
+      type: "Bauli",
+      name: "Moonfils",
+      kg: "50 g Pouch",
+      mrp: "20",
+      rs: "15",
+      des: "Standard Delivery: Tomorrow 9:00AM - 1:30PM",
+    },
+  ];
   var cart = JSON.parse(localStorage.getItem("addtocart")) || [];
   display(data);
+
+  document.getElementById("dropdown").addEventListener("change", function (e) {
+    window.location.href = e.target.value;
+  });
 
   function selectfilter() {
     var filter = document.getElementById("selectfilter").value;
@@ -759,7 +868,7 @@
     // console.log(data);
     display(data);
   }
-  
+
   function fun() {
     var rate = document.getElementById("20").value;
     if (rate == "20") {
@@ -842,6 +951,12 @@
       var add = document.createElement("button");
       add.innerHTML = "ADD";
       add.addEventListener("click", function () {
+        var qty = document.getElementById("countcart").value;
+        if(!qty){
+            window.alert("plz enter quntity");
+             return;
+        }
+        // console.log(qty);
         var obj = {
           image: elm.img,
           image2: elm.veg,
@@ -851,10 +966,25 @@
           mrp: elm.mrp,
           rate: elm.rs,
           desc: elm.des,
+          qty : Number(qty),
         };
-        cart.push(obj);
+        
+        var update= true;
+
+        cart.filter(function(el, ind){
+            
+            if(el.name == obj.name){
+                el.qty+=obj.qty;
+                update = false;
+            }
+        })
+        if(update){
+            cart.push(obj);
+        }
+        
         localStorage.setItem("addtocart", JSON.stringify(cart));
         console.log(obj);
+        document.getElementById("navigationbarcart").innerHTML = cart.length;
       });
       var div4 = document.createElement("div");
       div4.append(qty, ct, add);
@@ -873,8 +1003,6 @@
       // console.log(div);
       document.getElementById("items").append(div);
     });
-    
-    
+    document.getElementById("navigationbarcart").innerHTML = cart.length;
   }
-
 </script>

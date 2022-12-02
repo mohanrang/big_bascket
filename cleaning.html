@@ -342,8 +342,8 @@
         />
       </div>
       <div id="navigationbarm">
-        <input type="text" placeholder="Search for Products" />
-        <img
+        <input type="text" placeholder="Search for Products" id="search"/>
+        <img onclick="search()"
           src="https://www.iconsdb.com/icons/preview/green/google-web-search-xxl.png"
         />
       </div>
@@ -757,6 +757,19 @@
   document.getElementById("dropdown").addEventListener("change", function (e) {
     window.location.href = e.target.value;
   });
+  
+  function search(){
+    var val = document.getElementById("search").value;
+    // console.log(val);
+    var search = data.filter(function(el){
+        if(el.name.includes(val)){
+          return el;
+        }
+    });
+    // console.log(search);
+    display(search);
+  }
+
 
   function selectfilter() {
     var filter = document.getElementById("selectfilter").value;

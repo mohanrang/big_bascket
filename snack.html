@@ -292,8 +292,8 @@
         />
       </div>
       <div id="navigationbarm">
-        <input type="text" placeholder="Search for Products" />
-        <img
+        <input type="text" placeholder="Search for Products" id="search"/>
+        <img onclick="search()"
           src="https://www.iconsdb.com/icons/preview/green/google-web-search-xxl.png"
         />
       </div>
@@ -372,7 +372,7 @@
     </div>
     <div id="products">
       <div class="category">
-        <h3 style="color: rgb(2, 195, 2)">Fruits & Vegetables</h3>
+        <h3 style="color: rgb(2, 195, 2)">Snacks & Branded Foods</h3>
         <div class="categorycolor">
           <li>Cuts & Sprouts (105)</li>
           <li>Exotic Fruits & Veggies (97)</li>
@@ -674,6 +674,7 @@
     // console.log(data);
     display(data);
   }
+
   function fun() {
     var rate = document.getElementById("20").value;
     if (rate == "20") {

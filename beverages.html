@@ -342,8 +342,8 @@
         />
       </div>
       <div id="navigationbarm">
-        <input type="text" placeholder="Search for Products" />
-        <img
+        <input type="text" placeholder="Search for Products" id="search"/>
+        <img onclick="search()"
           src="https://www.iconsdb.com/icons/preview/green/google-web-search-xxl.png"
         />
       </div>
@@ -412,7 +412,7 @@
         <h3>Category</h3>
       </div>
       <div class="top3right">
-        <h3>Beverages (1822)</h3>
+        <h3>Beverages (22)</h3>
         <select id="selectfilter" onclick="selectfilter()">
           <option value="Popularity">Popularity</option>
           <option value="low2high">Price Low To High</option>
@@ -422,7 +422,7 @@
     </div>
     <div id="products">
       <div class="category">
-        <h3 style="color: rgb(2, 195, 2)">Beverages (1822)</h3>
+        <h3 style="color: rgb(2, 195, 2)">Beverages (22)</h3>
         <div class="categorycolor">
           <li>Cuts & Sprouts (105)</li>
           <li>Exotic Fruits & Veggies (97)</li>
@@ -763,6 +763,18 @@
   document.getElementById("dropdown").addEventListener("change", function (e) {
     window.location.href = e.target.value;
   });
+
+  function search(){
+    var val = document.getElementById("search").value;
+    // console.log(val);
+    var search = data.filter(function(el){
+        if(el.name.includes(val)){
+          return el;
+        }
+    });
+    // console.log(search);
+    display(search);
+  }
 
   function selectfilter() {
     var filter = document.getElementById("selectfilter").value;

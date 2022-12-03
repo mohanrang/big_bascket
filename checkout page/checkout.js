@@ -117,9 +117,11 @@ document.querySelector("#cartnum").innerText= cartArr.length;
 displaycart(cartArr)
 }
 
-document.querySelector("#cartnum").innerText= cartArr.length;
 
-function show2() {}
+
+function show2() {
+  document.querySelector("#cartnum").innerText= cartArr.length;
+}
 
 //////////////login sighnup/////////////////
 // let signUp = document.getElementById("sign-up");
@@ -129,41 +131,41 @@ let signIn = document.getElementById("sign-in");
 //   signIn.style.display = "none";
 // }
 
-function signin() {
-  // signUp.style.display = "none";
-  signIn.style.display = "flex";
-}
+// function signin() {
+//   // signUp.style.display = "none";
+//   signIn.style.display = "flex";
+// }
 
-function closeOption() {
-  // signUp.style.display = "none";
-  signIn.style.display = "none";
-}
-closeOption();
-function user_data() {
-  var mobile = document.getElementById("mobile-email").value;
-  var name = document.getElementById("name").value;
-  var obj = {
-    mobile: mobile,
-    name: name,
-  };
-  var arr;
-  arr = localStorage.getItem("user_cart");
-  if (arr == null) {
-    arr = [];
-  } else {
-    arr = localStorage.getItem("user_cart");
-    arr = JSON.parse(arr);
-  }
-  arr.push(obj);
-  localStorage.setItem("user_cart", JSON.stringify(arr));
-  // signIn.style.display = "none";
-  // location.reload();
-  var showname = document.getElementById("showname");
-  arr = localStorage.getItem("user_cart");
-  arr = JSON.parse(arr);
-  showname.innerHTML = "hello " + arr[arr.length - 1].name;
-  closeOption();
-}
+// function closeOption() {
+//   // signUp.style.display = "none";
+//   signIn.style.display = "none";
+// }
+// closeOption();
+// function user_data() {
+//   var mobile = document.getElementById("mobile-email").value;
+//   var name = document.getElementById("name").value;
+//   var obj = {
+//     mobile: mobile,
+//     name: name,
+//   };
+//   var arr;
+//   arr = localStorage.getItem("user_cart");
+//   if (arr == null) {
+//     arr = [];
+//   } else {
+//     arr = localStorage.getItem("user_cart");
+//     arr = JSON.parse(arr);
+//   }
+//   arr.push(obj);
+//   localStorage.setItem("user_cart", JSON.stringify(arr));
+//   // signIn.style.display = "none";
+//   // location.reload();
+//   var showname = document.getElementById("showname");
+//   arr = localStorage.getItem("user_cart");
+//   arr = JSON.parse(arr);
+//   showname.innerHTML = "hello " + arr[arr.length - 1].name;
+//   closeOption();
+// }
 
 
 document.querySelector("#checkout").addEventListener("click",checkout)
@@ -185,6 +187,7 @@ document.querySelector("#continue").addEventListener("click", continueshop)
 function continueshop(){
 window.location.href="../product page/product.html"
 }
+
 document.getElementById("dropdown").addEventListener("change", function (e) {
   window.location.href = e.target.value;
 });

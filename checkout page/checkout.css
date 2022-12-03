@@ -98,7 +98,7 @@ body{
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    width: 80%;
+    width: 90%;
     margin: auto;
   }
   #adress > img {
@@ -106,21 +106,22 @@ body{
     height: 30px;
   }
   #navigationbar {
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: auto;
     height: 200px;
+    gap: 6%;
   }
 
-  #navigationbar > #navigationbarr > img {
-    width: 60px;
-    height: 60px;
-  }
+  /* #navigationbar > #navigationbarr > img {
+    
+  } */
   #navigationbar > #navigationbarm > input {
     width: 600px;
     height: 30px;
+    outline: none;
   }
   #navigationbar > #navigationbarl {
     display: block;
@@ -137,9 +138,41 @@ body{
     width: 37px;
   }
   #navigationbar > #navigationbarl > img {
-    width: 300px;
+    width: 200px;
+    margin-left: -80px;
   }
   #navigationbar > #navigationbarm {
     display: flex;
     align-items: center;
   }
+  #categorypages{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    height: 45px;
+    margin-top: -32px;
+  }
+  #dropdown {
+    background-color: #84c224;
+    color: white;
+    font-size: 20px;
+    border: none;
+  }
+  #offers:hover{
+    background-color: #5b9209;
+    color: white;
+  }
+  #offers{
+    width: 80px;
+    padding-left: 15px;
+  }
+  #navigationbar {
+    margin-top: -50px;
+  }
+  #navigationbarr{
+    padding-right:40px;
+    display: flex;
+    background-color: #f2f2f2;
+   
+  }
+  /* #navigationbarcart{
+  } */

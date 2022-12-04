@@ -9,6 +9,7 @@ cartArr.map(function(elem,index){
   
   var row= document.createElement("tr")
 
+
   var col1 = document.createElement("td")
   col1.setAttribute("id","namecol")
   var p1 = document.createElement("p")
@@ -25,32 +26,46 @@ cartArr.map(function(elem,index){
   var col3=document.createElement("td")
   var btn1 = document.createElement("button")
   var img = document.createElement("img")
-  img.setAttribute("src","outline_add_black_24dp.png")
+  img.setAttribute("src","outline_remove_black_24dp.png")
   btn1.append(img)
+  img.style.width = "12px";
+  btn1.style.border = "none";
+  
+
 
 
   btn1.addEventListener("click",function(){
-   inc(index)
+   dec(index)
  })
   
   var btn2 = document.createElement("button")
  btn2.addEventListener("click",function(){
-   dec(index)
+   inc(index)
  })
 
-
   var img = document.createElement("img")
-  img.setAttribute("src","outline_remove_black_24dp.png")
+  img.setAttribute("src","outline_add_black_24dp.png")
   btn2.append(img)
+  img.style.width = "12px";
+  btn2.style.border = "none";
  
  
   var qtyinput = document.createElement("input")
   qtyinput.setAttribute("id","qtyinput")
   qtyinput.setAttribute("value",elem.qty)
+  qtyinput.style.width = "25px";
+  qtyinput.style.border = "#c6c6c6";
+  qtyinput.style.outline = "none";
+  qtyinput.style.textAlign = "center";
+
   
   var div = document.createElement("div")  
   div.setAttribute("id","quant")
   div.append(btn1,qtyinput,btn2)
+  div.style.border ="1px solid #efefef";
+  div.style.width ="81px";
+  div.style.backgroundColor = "#f0f0f0";
+  div.style.borderRadius = "5px";
 
   var col4 = document.createElement("td")
    col4.innerText = "Rs"+""+elem.rate*elem.qty;

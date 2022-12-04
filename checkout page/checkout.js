@@ -2,7 +2,6 @@
 var cartArr = JSON.parse(localStorage.getItem("addtocart"))||[];
 document.querySelector("#itemno").innerText= cartArr.length;
 
-var quantity =localStorage.getItem("Quantity") ||  0;
 function displaycart(cartArr){
 document.getElementById("tbody").innerHTML="";
 
@@ -47,14 +46,14 @@ cartArr.map(function(elem,index){
  
   var qtyinput = document.createElement("input")
   qtyinput.setAttribute("id","qtyinput")
-  qtyinput.setAttribute("value",quantity)
+  qtyinput.setAttribute("value",elem.qty)
   
   var div = document.createElement("div")  
   div.setAttribute("id","quant")
   div.append(btn1,qtyinput,btn2)
 
   var col4 = document.createElement("td")
-   col4.innerText = "Rs"+""+elem.mrp*elem.quantity;
+   col4.innerText = "Rs"+""+elem.mrp*elem.qty;
    
   var col5 = document.createElement("td")
   col5.innerText="X"
@@ -77,7 +76,7 @@ cartArr.map(function(elem,index){
 total();
 function total(){
 var total = cartArr.reduce(function(acc,elem){
-   return acc+ (elem.mrp*elem.quantity)
+   return acc+ (elem.mrp*elem.qty)
 
 },0)
 document.getElementById("total").textContent = total;
@@ -87,17 +86,17 @@ document.getElementById("subtotal").textContent =total;
 displaycart(cartArr)
 total();
 
-function inc(){
-quantity++;
-localStorage.setItem("Quantity",JSON.stringify(quantity));
+function inc(index){
+  cartArr[index].qty++;
+localStorage.setItem("Quantity",JSON.stringify(cartArr));
 displaycart(cartArr)
 total();
 }
 
-function dec(){
+function dec(index){
    
-   quantity--;
-   localStorage.setItem("Quantity",JSON.stringify(quantity));
+  cartArr[index].qty--;
+   localStorage.setItem("Quantity",JSON.stringify(cartArr));
    displaycart(cartArr)
    total();
 }

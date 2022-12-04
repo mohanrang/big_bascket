@@ -220,18 +220,10 @@ function order()
 function adres(){
   alert("address added sucessfully")
 }
-  var arr  = JSON.parse(localStorage.getItem("addtocart")) || [];
-  Showprice();
-  function Showprice(){
-      let Total =  0;
-      arr.map(function(ele){
-        let price =  document.createElement("p");
-        price.textContent = ele.rate;
-        Total += Number(ele.rate);
-      });
+  var Total  = JSON.parse(localStorage.getItem("SubTotal")) || [];
+ 
         document.getElementById("BasketValue").append("Rs" + " "+ Total);
         document.getElementById("TotalPaybleAmount").append("Rs" + " "+ Total);
-    }
    function checkOut(){
       window.location.href="../checkout page/checkout.html"
     }

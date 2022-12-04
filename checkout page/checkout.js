@@ -81,6 +81,8 @@ var total = cartArr.reduce(function(acc,elem){
 },0)
 document.getElementById("total").textContent = total;
 document.getElementById("subtotal").textContent =total;
+localStorage.setItem("SubTotal",total);
+
 }
 
 displaycart(cartArr)
@@ -190,3 +192,5 @@ window.location.href="../product page/product.html"
 document.getElementById("dropdown").addEventListener("change", function (e) {
   window.location.href = e.target.value;
 });
+document.getElementById("navigationbarcart").textContent =
+  "My Basket " + cartArr.length + " Items";

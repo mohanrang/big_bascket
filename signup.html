@@ -9,11 +9,14 @@
     <title>Sign Up</title>
 </head>
 <style>
+    body{
+        background-color:#f3f3f3; 
+
+    }
        #rk {
             width: 300px;
             height: 400px;
             background-color: white;
-            border: 1px solid;
             padding: 2%;
             margin: auto;
             margin-top: 5%;
@@ -37,42 +40,34 @@
             text-align: center;
             line-height: 19px;
             font-weight: 600;
+            margin-top: 1px;
         }
 
         #rk input {
             background-color: transparent;
             border: none;
-            margin-top: 10%;
-            margin-bottom: 5%;
+            margin-top: 8%;
+            margin-bottom: 4%;
             color: gray;
             width: 90%;
             height: 10%;
-            border-bottom: 1px dashed;
+            border-bottom: 1px solid #747787;
+            outline: none;
+            opacity: 0.5;
         }
 
-        #vk {
-            margin-top: 10%;
-            margin-bottom: 5%;
-            color: gray;
-            width: 90%;
-            height: 10%;
-            margin-left: 5%;
-            
-            background-color: white;
-            border: 1px solid black;
-        }
-
+    
         #kk {
             margin-top: 2%;
-            margin-left: 5%;
+            margin-bottom: 2%;
+            color: #747787;
             width: 90%;
             height: 10%;
-           /* border-bottom: 1px solid gray;*/
+            margin-left: 5%;
+            padding: 15px;
             border-radius: 5px;
-           /* font-weight: bolder;*/
-             border: none; 
-            background-color: #84c225;
-            color: white;
+            background-color: white;
+            border: 1px solid #747787;
         }
         #xk{
             margin-top: 2%;
@@ -85,6 +80,19 @@
              border: none; 
             background-color: green;
             color: white;
+        }
+        #kl{
+            margin-top: 5%;
+            margin-left: 5%;
+            width: 90%;
+            height: 10%;
+           /* border-bottom: 1px solid gray;*/
+            border-radius: 5px;
+            font-weight: bolder;
+             border: none; 
+            background-color: #84c225;
+            color: white;
+            padding: 15px;
         }
 
         #rk p {
@@ -101,10 +109,10 @@
         <h3>SIGN UP</h3>
         <input type="text" placeholder="Enter Full Name" id="input"><br>
         <input type="text" maxlength="10" placeholder="Enter Mobile Number (10-digit)" id="ak"><br>
-        <button id="kk" onclick="switcher()">Login using Email Address</button>
+        <button id="kk" onclick="switcher()">Sign up using Email Address</button>
         <input type="password" placeholder="Password" id="password"><br>
         <input type="password" placeholder="Confirm Password" id="confpassword"><br>
-        <button id="kk" onclick="registerUser()">Sign up</button>
+        <button id="kl" onclick="registerUser()">Sign up</button>
         <h4>Already have a account?<a href="login.html">Login</a></h4>
     </form>
     </div>

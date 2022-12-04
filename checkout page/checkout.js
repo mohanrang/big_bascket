@@ -19,7 +19,7 @@ cartArr.map(function(elem,index){
 
  var col2 = document.createElement("td")
   col2.setAttribute("id","Rs")
-  col2.innerText = "Rs"+elem.mrp
+  col2.innerText = "Rs"+elem.rate
  
 
   var col3=document.createElement("td")
@@ -53,7 +53,7 @@ cartArr.map(function(elem,index){
   div.append(btn1,qtyinput,btn2)
 
   var col4 = document.createElement("td")
-   col4.innerText = "Rs"+""+elem.mrp*elem.qty;
+   col4.innerText = "Rs"+""+elem.rate*elem.qty;
    
   var col5 = document.createElement("td")
   col5.innerText="X"
@@ -76,7 +76,7 @@ cartArr.map(function(elem,index){
 total();
 function total(){
 var total = cartArr.reduce(function(acc,elem){
-   return acc+ (elem.mrp*elem.qty)
+   return acc+ (elem.rate*elem.qty)
 
 },0)
 document.getElementById("total").textContent = total;
@@ -113,8 +113,9 @@ cartArr=[]
 document.querySelector("#subtotal").innerText="";
 document.querySelector("#total").innerText="";
 localStorage.setItem("addtocart",JSON.stringify(cartArr));
-document.querySelector("#itemno").innerText= cartArr.length;
-document.querySelector("#cartnum").innerText= cartArr.length;
+// document.querySelector("#itemno").innerText= cartArr.length;
+// document.querySelector("#cartnum").innerText= cartArr.length;
+window.location.reload();
 displaycart(cartArr)
 }
 
@@ -126,7 +127,7 @@ function show2() {
 
 //////////////login sighnup/////////////////
 // let signUp = document.getElementById("sign-up");
-let signIn = document.getElementById("sign-in");
+// let signIn = document.getElementById("sign-in");
 // function signup() {
 //   signUp.style.display = "flex";
 //   signIn.style.display = "none";
@@ -177,8 +178,10 @@ function checkout(){
 function removeitem(index){
 cartArr.splice(index,index+1)
 localStorage.setItem("addtocart",JSON.stringify(cartArr));
-document.querySelector("#itemno").innerText= cartArr.length;
-document.querySelector("#cartnum").innerText= cartArr.length;
+// document.querySelector("#itemno").innerText= cartArr.length;
+// document.querySelector("#cartnum").innerText= cartArr.length;
+window.location.reload();
+window.reload
 total();
 displaycart(cartArr)
 

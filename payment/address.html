@@ -22,9 +22,10 @@
         </div>
       </div>
       <hr />
-      <!-- <div class="payment_page">
-      <div id="left"> -->
+      <div class="payment_page">
+      <div id="left">
       <div id="main_div">
+      
         <div id="address">
           <div class="loction"><h3>Delivery Address</h3></div>
             <div id="address_form">
@@ -102,35 +103,41 @@
                 <input type="checkbox" name="" id="" />
                 <p>Set this as my default delivery address</p>
               </div>
-  
+
               <div id="address_last_div">
-                <button id="adres" onclick="adres()">ADD ADDRESS</button> <button>CANCEL</button>
+                <button id="adres" onclick="adres()">ADD ADDRESS</button> <button  onclick="checkOut()" >CANCEL</button>
               </div>
             </div>
         </div>
+        <div id="summary">
+          <div style="margin-bottom: 10px"><b> Order Summary</b></div>
+          
+       <div id="right">
+         <div id="sd">
+         <table  style="width: 110%">
+           <tr style="height:40px">
+             <td>Basket Value</td>
+             <td id="BasketValue"></td>
+           </tr >
+           <tr >
+             <td>Delivery Charge</td>
+             <td>Free</td>
+           </tr>
+         </table>
+       </div>
+       <div id="sb">
+         <table style="width:100%">
+           <tr style="height:30px">
+             <td><b>Total Amount Payable</b></td>
+             <td id="TotalPaybleAmount"></td>
+           </tr>
+         </table>
+       </div>
+       </div>
       </div>
-    <!-- <div id="right">
-      <div id="summary">
-        Order Summary
       </div>
-      <table>
-        <tr>
-          <td>Basket Value</td>
-          <td>Rs 84/-</td>
-        </tr>
-        <tr>
-          <td>Delivery Charge</td>
-          <td>Rs 50/-</td>
-        </tr>
-        <tr>
-          <td><b>Total Amount Payable</b></td>
-          <td>Rs 134</td>
-        </tr>
-      </table> -->
-    </div>
-    </div>
+      
          <!--**************** Payment options ************-->
-
       <div id="payment_options_main">
         <div id="payment_options">
           <h3>Payment Options</h3>
@@ -147,11 +154,8 @@
             </div>
           </div>
           <div>
-
-
 <!-- ***************Options Available For Payment ****************-->
            
-
             <div id="main">
               <div id="available_options">
                 <div class="net" id="net">
@@ -166,33 +170,32 @@
                 <div class="net">
                   Wallet
                 </div>
-                <div class="net"> 
+                <div class="net">
                   Pay Later
                 </div>
                 <div class="net">
                   Cash/Card on Delivery
                 </div>
               </div>
-
   <!-- ********* Enter Card Details********** -->
-
               <div id = "details">
                 <div id= "check">
-                  <input type="radio" >
+                  <input type="radio" required >
                   <b>Add Credit / Debit card</b> 
                 </div>
+                <form action="./otp.html">
                 <div class="Card_details">
                   <p>Card number</p>
-                  <input type="text"; placeholder="Enter card number">
+                  <input type="text"; placeholder="Enter card number"  maxlength="16" required>
                 </div>
                 <div id="cvv">
                   <div id="valid">
                     <p>Valid Thru</p>
-                    <input type="text"; placeholder="MM/YY">
+                    <input type="text"; placeholder="MM/YY" maxlength="5" required>
                   </div>
                   <div id="security_code">
                     <p>CVV</p>
-                    <input type="text"; placeholder="Security code">
+                    <input type="text"; placeholder="Security code" maxlength="3" required >
                   </div>
                 </div>
                 <div id="default_payment">
@@ -201,6 +204,7 @@
                 </div>
                 <button id="order" onclick="order()">Place order & Pay</button>
               </div>
+            </form>
             </div>
           </div>
       </div>
@@ -213,8 +217,23 @@ function order()
 {
   window.location.href="./otp.html"
 }
-
 function adres(){
   alert("address added sucessfully")
 }
+  var arr  = JSON.parse(localStorage.getItem("addtocart")) || [];
+  Showprice();
+  function Showprice(){
+      let Total =  0;
+      arr.map(function(ele){
+        let price =  document.createElement("p");
+        price.textContent = ele.rate;
+        Total += Number(ele.rate);
+      });
+        document.getElementById("BasketValue").append("Rs" + " "+ Total);
+        document.getElementById("TotalPaybleAmount").append("Rs" + " "+ Total);
+    }
+   function checkOut(){
+      window.location.href="../checkout page/checkout.html"
+    }
+
 </script>

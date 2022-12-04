@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Online Grocery Shopping and Online Supermarket in India - bigbasket</title>
+    <link rel="shortcut icon" href="Big-Basket.png">
     <link rel="stylesheet" href="./checkout.css">
     <script
       src="https://kit.fontawesome.com/72215895a8.js"
@@ -15,163 +16,115 @@
    <!-- <-----------------------navbar---------------------> 
 
    <header id="navbar">
-    <div id="top_nav_bar_hidden">
-     <div>1860 123 1000</div>
-          <div>Southcity Apts,L&t South City, bangalore</div>   
-          <!-- //////////////// -->
-
-            <div class="navbar_signin" onclick="signin()">Sign In</div>
-                        <span id="showname"></span>
-              <!-- <div </div> -->
-           <div id="sign-in">
-              
-      <div>
-          <span onclick="closeOption()" class="sign-close">X</span>
-          <div id="sign-up-in">
-             
-          </div>
-          <input id="mobile-email" type="text" placeholder="Mobile / Email">
-                      <input id="name" type="text" placeholder="Name">
-          <button onclick="user_data()">Proceed</button>
-          
-      </div>
-  </div>
-
-  <!-- <div id="sign-up">
-     
-      
-  </div> -->
-              <!-- /////////////login part complate///////////// -->
+    <div id="adress">
+      <p><a href="./signup.html" style="text-decoration: none">profile</a></p>
+      <img
+        onclick=""
+        src="https://thumbs.dreamstime.com/z/avatar-icon-vector-male-user-person-profile-symbol-flat-color-glyph-pictogram-illustration-117610386.jpg"
+      />
+      <p>56004, Bangalore</p>
+      <img
+        src="https://i.pinimg.com/736x/b7/02/af/b702afc7b811840ebc49037cdc98bc45.jpg"
+      />
+      <p>1860 123 1000</p>
+      <img
+        src="https://www.kindpng.com/picc/m/501-5013043_telephone-phone-call-icon-symbol-vector-tel-icon.png"
+      />
     </div>
-    <div id="navbar_niche_wala">
-      <div id="logonav"><img src="logoo.png" alt="" /></div>
-      <div id="search_item">
-        <div><input type="text" name="" id="" placeholder="Search for Products.." /></div>
-        <div><img src="./outline_search_white_24dp.png"></div>
-        
+    <div id="navigationbar">
+      <div id="navigationbarl">
+        <img
+          src="https://d1.awsstatic.com/apac/customer-references-logos-(%401x---%402x)/BigBasket_logo%402x.ef31ecfba085a8cc00a32b3cfc077fc04a01aeb1.png"
+        />
       </div>
-      <div id="cartnav">
-        <div id="cart_img">
-          <img src="basket.png" alt="" />
-        </div>
-        <div id="cart_qunt" onclick="cartpage()">
-          <samp> My Basket</samp>
-          <p><span id="cartnum">0</span>Item</p>
-        </div>
+      <div id="navigationbarm">
+        <input type="text" placeholder="Search for Products" />
+        <img
+          src="google-web-search-xxl.png"
+        />
+      </div>
+      <div id="navigationbarr">
+        <img
+          onclick=""
+          src="basket.png"
+        />
+        <p id="navigationbarcart"> My Basket 0 Item</p>
+
       </div>
     </div>
-    <div id="category_wala_part">
-      <div class="category_wala_part_first">
-
-    <!-- ///////////////dropdown//////// -->
-    <div
-      class="category"
-    >
-      <p>SHOP BY CATEGORY</p>
-
-      <!-- <span>Categories</span> -->
-      <!-- <div class="category-arrow"></div> -->
-      <div class="category-hover-div">
-        <div class="category-hover-div-left">
-          <div class="category-hover-div-left-options">
-            Fruits & Vegetables
-          </div>
-          <div class="category-hover-div-left-options">
-            Foodgrains, Oil & Masala
-          </div>
-          <div class="category-hover-div-left-options">
-            Bakery Cakes & Dairy
-          </div>
-          <div class="category-hover-div-left-options">Beverages</div>
-          <div class="category-hover-div-left-options">
-            Snacks & Branded Foods
-          </div>
-          <div class="category-hover-div-left-options">Beauty & Hygiene</div>
-          <div class="category-hover-div-left-options">
-            Cleaning & Household
-          </div>
-          <div class="category-hover-div-left-options">
-            Kichen, Garden 7 Pets
-          </div>
-          <div class="category-hover-div-left-options">
-            Eggs , Meats & Fish
-          </div>
-          <div class="category-hover-div-left-options">
-            Gourmet & orld Food
-          </div>
-          <div class="category-hover-div-left-options">Baby Care</div>
-          <div class="category-hover-div-left-options">View All</div>
-        </div>
-
-        <!-- /////////////right////////// -->
-        <div class="category-hover-div-right">
-        <a href="../product page/product.html">
-          Fresh Vegetables
-        </a>
-        <a href="">
-          Herbs & Seasonings
-        </a>
-        <a href="">
-          Fresh Fruits
-        </a>
-        <a href="">Organic Fruits & Vegetables</a>
-        <a href="">Cuts & Sprouts</a>
-        <a href="">Exotic Fruits & Veggies</a>
-        <a href="">Flower Bouquets, Bunches</a>
+    <div id="categorypages">
+      <select id="dropdown">
+        <option>SHOP BY CATEGORY</option>
+        <option value="./fruites.html">Fruits & Vegetables</option>
+        <option value="./foodgrains.html">Foodgrains, Oil & Masala</option>
+        <option value="./bakery.html">Bakery,Cakes & Dairy</option>
+        <option value="./Beverages.html">Beverages</option>
+        <option value="./snack.html">Snacks & Branded Foods</option>
+        <option value="./meatandfish.html">Eggs, Meat & Fish</option>
+        <option value="./cleaning.html">Cleaning & Household</option>
+        <option value="./Kitchen.html">Kitchen, Garden & pets</option>
+        <option value="./gourments.html">Gourmet & World Food</option>
+        <option value="./babycare.html">Baby Care</option>
+      </select>
+      <!-- <button onclick="">SHOP BY CATEGORY</button> -->
+      <div id="offers"><p><img src="./icons/bg icon/offer.svg" alt="" srcset="">OFFERS</p></div>
+    </div>
     
-        </div>
-      </div>
-
     </div>
-            <div><p><img src="./icons/bg icon/offer.svg" alt="" srcset="">OFFERS</p></div>
-             <div><p><img src="./icons/bg icon/bike.svg" alt="" srcset=""> BB EXPRESS</p></div>
-              <div><p><img src="./icons/bg icon/home.svg" alt="" srcset="">BB SPECIALTY</p></div>
-     </div>
+    </div>
+   
   </header>
 
 
 
 
     <div id="container">
-      <div id="itemshow">
-        <h2>Your Basket (<span id="itemno">0</span>item)</p>
+      <div id="itemshow" style="width: 95%; margin:auto;">
+        <h2 style="color: #585756;font-weight:lighter">Your Basket (<span id="itemno">0</span>item)</p>
+          <hr/>
       </div>
-      
-      <table>
+     
+     
+      <div style="width: 95%; margin:auto">
+      <table cellspacing="0"  cellpadding="0">
         <thead>
           <tr>
-            <th style="width: 1000px;height: 50px;">ITEM DESCRIPTION</th>
-            <th style="width: 20%;">UNIT PRICE</th>
-            <th style="width: 20%;">QUANTITY</th>
-            <th style="width: 20%;">SUBTOTAL</th> 
+            <th style="width: 1000px;height: 50px;padding-left: 15px;">ITEM DESCRIPTION</th>
+            <th style="width: 20%;padding-left: 15px;">UNIT PRICE</th>
+            <th style="width: 20%;padding-left: 15px;">QUANTITY</th>
+            <th style="width: 20%;padding-left: 15px;">SUBTOTAL</th> 
           </tr>
         </thead>
         <tbody id="tbody">
           
         </tbody>
       </table>
-      <button id="empty">
-        <i class="fa-solid fa-basket-shopping"></i>
-        EMPTY BASKET
-      </button>
-
+      <hr />
+        <button id="empty">
+          <i class="fa-solid fa-basket-shopping"></i>
+          EMPTY BASKET
+        </button >
       <div id="card">
         <div id="first">
-          <div>
+          <div style="display: flex; justify-content:space-evenly; gap: 60%;">
             <p>Subtotal</p>
             <p>Rs.<span id="subtotal">0</span></p>
           </div>
-          <div>
+          <div style="display: flex;margin-left:6%; margin-top:-15px; gap: 60%;">
             <p>Delivery Charges</p>
             <p>**</p>
           </div>
+          <hr />
         </div>
-        <hr />
+        
         <div id="second">
-          <h1>TOTAL</h1>
-          <h1>Rs.<span id="total">0</span></h1>
+          <div style="display: flex; justify-content:space-evenly; gap: 50%;">
+          <h2>TOTAL</h2>
+          <h2>Rs.<span id="total">0</span></h2>
         </div>
         <hr />
+        </div>
+        
         <div id="third">
           <button id="checkout">
             CHECKOUT
@@ -180,8 +133,10 @@
           <p>** Actual delivery charges computed at checkout time</p>
         </div>
       </div>
-      <button id="continue">CONTINUE SHOPPING</button>
+      
     </div>
+    <button id="continue">CONTINUE SHOPPING</button>
+  </div>
 
 <!-- <-----------------------------footer-----------------------> 
 <div id="footer">
@@ -226,21 +181,21 @@
       </div>
   </div>
   <div class="parent2">
-      <div class="child2" style="display:flex">
-          <h4 style="color:#79d549;">POPULAR CATEGORIES:</h4>
+      <div class="child2" style="display:flex;">
+          <h4 style="color:#79d549; width: 300px;">POPULAR CATEGORIES:</h4>
           <p>
               Sunflower Oils, Wheat Atta, Ghee, Milk, Health Drinks, Flakes, Organic F&V, Namkeen, Eggs, Floor Cleaners, Other Juices, Leafy Vegetables, Frozen Veg Food, Diapers & Wipes,</p>
       </div>
       <div class="child2" style="display: flex;">
-          <h4 style="color: #79d549;">POPULAR BRAND:</h4>
+          <h4 style="color: #79d549; width: 340px;">POPULAR BRAND:</h4>
           <p>
 Amul, Nescafe , MTR, Red Bull, elite cake, Pediasure, Yummiez, Yera, Yakult, Britannia, Wow Momo, Fortune , Haldirams , Ferrero, Lays, Patanjali, McCain, kwality walls, Cadbury Dairy Milk, Pedigree,</p>
       </div>
       <div class="child2" style="display: flex;">
-          <h4 style="color: #79d549;"> CITIES WE SERVE:</h4>
+          <h4 style="color: #79d549; width: 1345px;"> CITIES WE SERVE:</h4>
           <p>Bangalore,Hyderabad,Mumbai,Pune,Chennai,Delhi,Mysore,Madurai,Coimbatore,Vijayawada-Guntur,Kolkata,Ahmedabad-Gandhinagar,Nashik Business,Lucknow-Kanpur,Gurgaon,Vadodara,Visakhapatnam,Surat,Nagpur,Patna,Indore,Chandigarh Tricity,Jaipur,Bhopal,Noida-Ghaziabad,Kochi,Krishna District,Bhubaneshwar-Cuttack,Guwahati,Renigunta,Hubli,Davanagere,Trichy,Amravati,Raipur,Rajkot,Gwalior,Bareilly,Allahabad,Hyderabad Rural,Bangalore Rural,Chennai Rural,Vizag Rural,Lucknow Rural,Noida Rural,Ahmedabad Rural,Bhopal Rural,Bhubaneswar Rural,Coimbatore Rural,Chandigarh Rural,Gurugram Rural,Guwahati Rural,Indore Rural,Kochi Rural,Kolkata Rural,Mumbai Rural,Mysore Rural,Nagpur Rural,Patna Rural,Pune Rural,Surat Rural,Vadodara Rural,Jaipur Rural,Ranchi,Nashik,Agra,Kozhikode,</div>
       <div class="child2" style="display: flex;">
-          <h4 style="color: #79d549;"> PAYMENT OPTIONS:  &#160  &#160  &#160 </h4>
+          <h4 style="color: #79d549;width: 205px;"> PAYMENT OPTIONS:  &#160  &#160  &#160 </h4>
           <img src="./Screenshot 2022-11-30 020250.png" alt="" style="height: 50%;width: 60%;">
 
       </div>

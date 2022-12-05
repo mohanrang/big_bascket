@@ -204,7 +204,7 @@ displaycart(cartArr)
 
 document.querySelector("#continue").addEventListener("click", continueshop)
 function continueshop(){
-window.location.href="../index.html"
+window.location.href="../index.html";
 }
 
 document.getElementById("dropdown").addEventListener("change", function (e) {
